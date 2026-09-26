@@ -83,6 +83,7 @@ flowchart LR
 - [MITRE ATT&CK](frameworks/mitre-attack.md)
 - [NIST CSF 2.0](frameworks/nist-csf.md)
 - [CIS Controls v8.1](frameworks/cis-controls.md)
+- [AI Security Architecture](ai-security/README.md)
 - [AI Agent Security](ai-security/agent-security.md)
 - [MCP Security](ai-security/mcp-security.md)
 - [Detection Engineering](operations/detection-engineering.md)

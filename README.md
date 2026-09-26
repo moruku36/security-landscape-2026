@@ -15,7 +15,11 @@ Most annual threat reports answer **what happened**. This repository also asks:
 - What should change in Azure, AWS, GCP, SaaS, CI/CD, and AI-agent environments?
 - Which telemetry and detection capabilities are required to respond at machine speed?
 
-The result is not a vendor ranking. It is a cross-source architecture synthesis.\n\n### Architecture lens\n\nThe repository intentionally uses a **generalist architect lens across Enterprise IT × Cloud × Security × DevSecOps × Operations**. Threat intelligence is translated into trust boundaries, identity design, control-plane guardrails, telemetry, recovery, and operating-model decisions.
+The result is not a vendor ranking. It is a cross-source architecture synthesis.
+
+### Architecture lens
+
+The repository intentionally uses a **generalist architect lens across Enterprise IT × Cloud × Security × DevSecOps × Operations**. Threat intelligence is translated into trust boundaries, identity design, control-plane guardrails, telemetry, recovery, and operating-model decisions.
 
 ## 2026 thesis
 
@@ -90,6 +94,7 @@ Seven themes recur across the 2026 evidence base:
 
 ### AI security
 
+- [AI Security Architecture](ai-security/README.md)
 - [Agent security](ai-security/agent-security.md)
 - [MCP security](ai-security/mcp-security.md)
 

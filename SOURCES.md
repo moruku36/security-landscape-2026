@@ -100,7 +100,10 @@ This source register separates **threat evidence**, **conference signals**, **fr
 ## AI / MCP implementation references
 
 - MCP Authorization specification (2026-07-28): https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization
-- MCP Security Best Practices: https://modelcontextprotocol.io/docs/tutorials/security/security_best_practices\n- MCP 2026-07-28 conformance status: https://plan.modelcontextprotocol.io/conformance\n- MCP SEP/status register: https://plan.modelcontextprotocol.io/seps\n- MCP roadmap (2026-08-22): https://blog.modelcontextprotocol.io/posts/mcp-roadmap/
+- MCP Security Best Practices: https://modelcontextprotocol.io/docs/tutorials/security/security_best_practices
+- MCP 2026-07-28 conformance status: https://plan.modelcontextprotocol.io/conformance
+- MCP SEP/status register: https://plan.modelcontextprotocol.io/seps
+- MCP roadmap (2026-08-22): https://blog.modelcontextprotocol.io/posts/mcp-roadmap/
 
 ## Methodology
 
@@ -110,4 +113,5 @@ This source register separates **threat evidence**, **conference signals**, **fr
 - Conference material is used as a forward-looking technical signal and kept distinct from incident statistics.
 - Framework mappings are repository analysis unless explicitly supplied by the original source.
 - Product-specific cloud guidance is subordinate to provider-neutral architecture principles.
-- Important statistics should record the observation context, denominator/population where available, and official evidence in the report note.\n- Counts, percentages, medians, averages, fastest observations, incident counts, breach counts and attack-technique counts are preserved as different measurement types; they are not normalized without source support.
+- Important statistics should record the observation context, denominator/population where available, and official evidence in the report note.
+- Counts, percentages, medians, averages, fastest observations, incident counts, breach counts and attack-technique counts are preserved as different measurement types; they are not normalized without source support.
