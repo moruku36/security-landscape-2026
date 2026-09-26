@@ -3,10 +3,10 @@ publisher: "Verizon"
 edition: "2026 Data Breach Investigations Report"
 publication_date: "2026-05-18"
 observation_period: "2024-11-01 to 2025-10-31"
-dataset_or_scope: "Global incident and breach data contributed by law enforcement, forensic firms, insurers, industry groups, VTRAC and other partners"
+dataset_or_scope: "22,000+ breaches across 145 countries, with data contributed by law enforcement, forensic firms, insurers, industry groups, VTRAC and other partners"
 geography: "Global"
 primary_source: "https://www.verizon.com/business/resources/reports/dbir/"
-last_verified: "2026-09-26"
+last_verified: "2026-09-27"
 ---
 
 # Verizon 2026 Data Breach Investigations Report
@@ -21,7 +21,7 @@ DBIR is the broadest statistical baseline in this repository. Its strength is co
 |---|---|---|
 | **31%** of breaches started with software vulnerabilities | 2026 DBIR breach population | [Verizon](https://www.verizon.com/business/resources/reports/dbir/) |
 | **48%** of breaches involved ransomware | 2026 DBIR | [Verizon](https://www.verizon.com/business/resources/reports/dbir/) |
-| Generative AI augmented **15%** of attack techniques | 2026 DBIR | [Verizon](https://www.verizon.com/business/resources/reports/dbir/) |
+| Generative AI was observed augmenting **15 distinct attack techniques** | 2026 DBIR | [Verizon](https://www.verizon.com/business/resources/reports/dbir/) |
 | Mobile-targeted social engineering produced **40% higher click rates** | 2026 DBIR | [Verizon](https://www.verizon.com/business/resources/reports/dbir/) |
 
 Verizon states that the in-scope incident period for the 2026 edition is **2024-11-01 through 2025-10-31**.

@@ -6,7 +6,7 @@ observation_period: "multiple Microsoft telemetry and intelligence datasets; rep
 dataset_or_scope: "Microsoft security, identity, cloud, fraud and threat-intelligence telemetry"
 geography: "Global"
 primary_source: "https://www.microsoft.com/en-us/security/security-insider/threat-landscape/microsoft-digital-defense-report-2025"
-last_verified: "2026-09-26"
+last_verified: "2026-09-27"
 ---
 
 # Microsoft Digital Defense Report 2025
@@ -24,7 +24,7 @@ MDDR is broader than a pure incident-response report. It combines cybercrime, na
 | Destructive campaigns targeting cloud increased **87%** | Microsoft report summary | [Microsoft](https://www.microsoft.com/en-us/security/security-insider/threat-landscape/microsoft-digital-defense-report-2025) |
 | AI-driven phishing was reported as **3× more effective** than traditional campaigns | Report summary | [Microsoft](https://www.microsoft.com/en-us/security/security-insider/threat-landscape/microsoft-digital-defense-report-2025) |
 | More than **40%** of ransomware attacks had a hybrid component | Report summary | [Microsoft](https://www.microsoft.com/en-us/security/security-insider/threat-landscape/microsoft-digital-defense-report-2025) |
-| AI-driven forgeries increased **195% globally** | Synthetic-identity section | [Microsoft](https://www.microsoft.com/en-us/security/security-insider/threat-landscape/microsoft-digital-defense-report-2025) |
+| AI-driven forgeries increased **195% globally** | Synthetic-identity section | [Microsoft](https://www.microsoft.com/en-us/security/security-insider/threat-landscape/microsoft-digital-defense-report-2025) |\n| **28%** of Microsoft IR breaches began with phishing/social engineering, **18%** with unpatched web assets, and **12%** with exposed remote services | Microsoft Incident Response | [Microsoft](https://www.microsoft.com/en-us/security/security-insider/threat-landscape/microsoft-digital-defense-report-2025) |\n| Only **4%** of incidents with a known motivation were espionage-driven | Microsoft Incident Response | [Microsoft](https://www.microsoft.com/en-us/security/security-insider/threat-landscape/microsoft-digital-defense-report-2025) |
 
 ## Strategic themes
 

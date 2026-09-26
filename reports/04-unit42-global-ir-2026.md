@@ -2,11 +2,11 @@
 publisher: "Palo Alto Networks Unit 42"
 edition: "2026 Global Incident Response Report"
 publication_date: "2026-02-17"
-observation_period: "primarily 2025 incident-response engagements"
-dataset_or_scope: "750+ major incident-response engagements referenced in the edition"
-geography: "Global"
+observation_period: "2024-10-01 to 2025-09-30"
+dataset_or_scope: "750+ Unit 42 incident-response cases across 50+ countries; comparisons include earlier cases back to 2021"
+geography: "Global (50+ countries)"
 primary_source: "https://www.paloaltonetworks.com/resources/research/unit-42-incident-response-report"
-last_verified: "2026-09-26"
+last_verified: "2026-09-27"
 ---
 
 # Unit 42 Global Incident Response Report 2026
@@ -27,11 +27,11 @@ Unit 42 is one of the closest peers to M-Trends in this repository: an incident-
 | Finding | Observation context | Evidence |
 |---|---|---|
 | Identity weaknesses played a material role in **nearly 90%** of investigations | 2025 casework | [Unit 42](https://www.paloaltonetworks.com/resources/research/unit-42-incident-response-report) |
-| **87%** of incidents required evidence from 2+ data sources to reconstruct the incident | Unit 42 investigations | [Unit 42](https://www.paloaltonetworks.com/resources/research/unit-42-incident-response-report) |
+| **87%** of intrusions involved activity across two or more attack surfaces | 750+ IR engagements | [Unit 42](https://www.paloaltonetworks.com/resources/research/unit-42-incident-response-report) |\n| In **87%** of investigations, responders reviewed evidence from two or more distinct data sources | 2025 casework | [Unit 42](https://www.paloaltonetworks.com/resources/research/unit-42-incident-response-report) |
 | **48%** of investigations involved browser-based activity | 2025 | [Unit 42](https://www.paloaltonetworks.com/resources/research/unit-42-incident-response-report) |
-| Fastest quartile reached exfiltration in **1.2 hours**, down from 4.8 hours the prior year | Real-world IR data | [Unit 42](https://www.paloaltonetworks.com/resources/research/unit-42-incident-response-report) |
+| Fastest quartile reached exfiltration in **72 minutes**, down from **285 minutes** in 2024 | Calendar-year 2025 vs 2024 IR data | [Unit 42](https://www.paloaltonetworks.com/resources/research/unit-42-incident-response-report) |
 | More than **90%** of incidents were materially enabled by preventable gaps / inconsistent controls | 2025 | [Unit 42](https://www.paloaltonetworks.com/resources/research/unit-42-incident-response-report) |
-| Software vulnerabilities accounted for **22%** of initial access in the cited incident set | 2025 | [Unit 42](https://www.paloaltonetworks.com/resources/research/unit-42-incident-response-report) |
+| Phishing and vulnerability exploitation each accounted for **22%** of initial access | 2025 incidents | [Unit 42](https://www.paloaltonetworks.com/resources/research/unit-42-incident-response-report) |
 
 ## Identity interpretation
 
