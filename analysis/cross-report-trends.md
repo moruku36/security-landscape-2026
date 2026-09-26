@@ -1,16 +1,20 @@
 # Cross-report consensus matrix
 
-This matrix records **evidence prominence**, not a vendor score.
+This matrix records **evidence prominence**, not vendor quality, product capability, or a security score.
 
-- **Major** — a primary theme or prominent finding.
-- **Observed** — explicitly supported, but not a dominant theme.
-- **Not emphasized** — not materially emphasized in the reviewed material.
+## Evidence labels
 
-Because each publisher uses a different observation population and methodology, percentages are intentionally not compared as if they shared a denominator.
+- **Major** — the source makes the theme a primary finding, dedicated trend, or repeated recommendation.
+- **Observed** — the source explicitly supports the theme, but it is not a dominant focus.
+- **Not emphasized** — the reviewed material does not materially emphasize the theme. This does **not** mean the theme is absent from the publisher's broader research.
+
+No numeric score is calculated from these labels.
+
+Because each publisher uses a different observation population, methodology, geography, and incident definition, percentages are intentionally **not normalized or ranked across vendors**.
 
 ## 2026 consensus map
 
-| Theme | M-Trends | DBIR | CrowdStrike | Unit 42 | Microsoft | IBM | ENISA | Conference signal |
+| Theme | M-Trends | DBIR | CrowdStrike | Unit 42 | Microsoft | IBM | ENISA | Independent conference signal |
 |---|---|---|---|---|---|---|---|---|
 | AI accelerates offensive activity | Major | Major | Major | Major | Major | Major | Observed | RSAC / Black Hat / DEF CON / FIRST |
 | Identity / credential / token abuse | Major | Major | Major | Major | Major | Major | Observed | RSAC / Black Hat / FIRST |
@@ -25,19 +29,27 @@ Because each publisher uses a different observation population and methodology, 
 
 ## Evidence anchors
 
-The following examples explain why the matrix looks the way it does.
+These are representative anchors for the labels above. The individual report notes contain the observation windows, limitations, and primary-source links needed to interpret them correctly.
 
-| Source | Evidence anchor |
-|---|---|
-| M-Trends 2026 | 500k+ hours of 2025 investigations; exploit remained the leading initial infection vector; voice phishing rose; edge persistence and long dwell time are emphasized; median handoff from initial access to a secondary threat group reached 22 seconds. |
-| Verizon DBIR 2026 | 31% of breaches began with software vulnerabilities; 48% involved ransomware; generative AI augmented 15% of attack techniques; mobile social engineering showed higher click rates. |
-| CrowdStrike 2026 | 27-second fastest eCrime breakout; AI-enabled adversary activity +89%; cloud-conscious state-nexus intrusions +266%; 40% of vulnerabilities exploited by China-nexus actors targeted edge devices. |
-| Unit 42 2026 | Identity weaknesses materially contributed to almost 90% of investigations; attack lifecycle compression, browser activity, SaaS, trusted connectivity, and multi-surface attacks are core themes. |
-| Microsoft MDDR 2025 | AI-driven phishing, destructive cloud campaigns, hybrid ransomware, identity and cloud resilience, and automated response are prominent themes. |
-| IBM X-Force 2026 | Public-facing exploitation +44% YoY; 56% of disclosed vulnerabilities did not require authentication; 300k AI-chatbot credentials observed for sale; active ransomware groups +49%. |
-| ENISA 2026 | Ransomware remained the most impactful short-term incident type; geopolitical DDoS activity and NIS2-essential entities feature heavily; AI use in malicious operations is expected to grow. |
+| Source | Representative evidence anchor | Report note |
+|---|---|---|
+| M-Trends 2026 | 500k+ hours of 2025 investigations; exploits remained the leading initial infection vector; voice phishing rose; edge persistence and long dwell time are emphasized; median initial-access handoff reached 22 seconds. | [M-Trends](../reports/01-m-trends-2026.md) |
+| Verizon DBIR 2026 | 31% of breaches began with software vulnerabilities; 48% involved ransomware; generative AI was observed augmenting **15 distinct attack techniques**; mobile-origin phishing simulations produced higher click rates. | [DBIR](../reports/02-verizon-dbir-2026.md) |
+| CrowdStrike 2026 | Fastest observed eCrime breakout was 27 seconds; AI-enabled adversary activity increased 89%; state-nexus cloud-conscious intrusions increased 266%; edge devices were heavily represented in China-nexus exploitation. | [CrowdStrike](../reports/03-crowdstrike-global-threat-report-2026.md) |
+| Unit 42 2026 | Identity weaknesses materially contributed to nearly 90% of investigations; 87% of intrusions crossed multiple attack surfaces; browser activity, SaaS, trusted connectivity, and rapidly shrinking time-to-exfiltration are central themes. | [Unit 42](../reports/04-unit42-global-ir-2026.md) |
+| Microsoft MDDR 2025 | AI-driven phishing, destructive cloud campaigns, hybrid ransomware, identity/cloud resilience, and automated response are prominent; Microsoft IR also highlights phishing/social engineering, unpatched web assets, and exposed remote services as initial-access paths. | [Microsoft](../reports/05-microsoft-digital-defense-report-2025.md) |
+| IBM X-Force 2026 | Public-facing exploitation increased 44% YoY; 56% of disclosed vulnerabilities did not require authentication; 300k AI-chatbot credentials were observed for sale; active ransomware groups increased 49%. | [IBM](../reports/06-ibm-xforce-2026.md) |
+| ENISA 2026 | Ransomware remained the most impactful short-term incident type; public administration and NIS2 essential/important entities feature heavily; geopolitical DDoS and malicious use of emerging AI are emphasized. | [ENISA](../reports/07-enisa-threat-landscape-2026.md) |
 
-See the individual [report notes](../reports/) for observation periods and source links.
+## What qualifies as a cross-source signal?
+
+A repository-level conclusion is treated as a **cross-source signal** when at least one of these is true:
+
+1. Multiple independent report populations explicitly support the theme.
+2. A report population and independent conference/research material converge on the same architectural concern.
+3. Different sources observe different stages of the same attack path.
+
+This is stronger than counting how many vendors mention a keyword.
 
 ## Cross-source synthesis
 
@@ -59,7 +71,7 @@ flowchart TD
     D --> G
 ```
 
-AI does not replace this path. It lowers the cost and time of reconnaissance, lure generation, code/tool creation, data processing, and decision-making across it.
+AI does not replace this path. Across the reviewed evidence, it primarily lowers cost and time in reconnaissance, lure generation, code/tool creation, data processing, troubleshooting, and decision-making.
 
 ## What changed from the classic intrusion model
 
@@ -78,11 +90,11 @@ Exploit / Vishing / OAuth / Session Theft
   → Data + Identity + Backup + Recovery
 ```
 
-This is why endpoint-centric coverage is necessary but no longer sufficient.
+This is why endpoint-centric coverage remains necessary but is no longer sufficient.
 
 ## Architectural conclusion
 
-The common denominator is **control-plane abuse**:
+The recurring structural issue is **control-plane abuse**:
 
 - valid or alternate authentication material;
 - delegated trust and SaaS connectivity;
