@@ -46,3 +46,22 @@ Before adding a new "2026 consensus" statement:
 ## Automated checks
 
 A GitHub Actions link checker is included under `.github/workflows/link-check.yml` to catch stale source links.
+
+## Source-monitor workflow
+
+Official report landing pages are monitored by:
+
+- `monitor/sources.json`
+- `tools/check_sources.py`
+- `.github/workflows/source-monitor.yml`
+
+The monitor is intentionally **detection-only**. It may identify a potential new edition, but it must not automatically rewrite evidence or architecture conclusions.
+
+When a monitor issue appears:
+
+1. Open the official primary source.
+2. Confirm edition, publication date, observation period, methodology, and denominator.
+3. Update English/Japanese notes together.
+4. Re-run cross-source synthesis only if evidence materially changes.
+5. Update the monitor registry's `current` and `next_patterns` values.
+6. Close the monitor issue after the refresh is complete.

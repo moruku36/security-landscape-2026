@@ -41,6 +41,27 @@ These are representative anchors for the labels above. The individual report not
 | IBM X-Force 2026 | Public-facing exploitation increased 44% YoY; 56% of disclosed vulnerabilities did not require authentication; 300k AI-chatbot credentials were observed for sale; active ransomware groups increased 49%. | [IBM](../reports/06-ibm-xforce-2026.md) |
 | ENISA 2026 | Ransomware remained the most impactful short-term incident type; public administration and NIS2 essential/important entities feature heavily; geopolitical DDoS and malicious use of emerging AI are emphasized. | [ENISA](../reports/07-enisa-threat-landscape-2026.md) |
 
+## Supplemental corroboration
+
+The core seven remain the primary consensus set. Supplemental 2026 research strengthens or refines specific domains:
+
+| Domain | Supplemental evidence |
+|---|---|
+| Cloud / CI/CD / forensic readiness | [Google Cloud Threat Horizons H1 2026](../supplemental/01-google-cloud-threat-horizons-h1-2026.md) |
+| Identity / AD / off-hours response / log retention | [Sophos Active Adversary 2026](../supplemental/02-sophos-active-adversary-2026.md) |
+| SaaS trust / token theft / living-off-cloud / DDoS | [Cloudflare Threat Report 2026](../supplemental/03-cloudflare-threat-report-2026.md) |
+| Current 2026 availability pressure | [Cloudflare DDoS H1 2026](../supplemental/04-cloudflare-ddos-h1-2026.md) |
+| API / application / DNS attack surface | [Akamai Apps/APIs/DDoS 2026](../supplemental/05-akamai-app-api-ddos-2026.md) |
+| Agent / MCP / machine identity | [Akamai Agentic Threat Landscape 2026](../supplemental/06-akamai-agentic-threat-landscape-2026.md) |
+| AI / MCP / edge / hybrid convergence | [Check Point Cyber Security Report 2026](../supplemental/07-check-point-cyber-security-report-2026.md) |
+| Exploit velocity / network telemetry | [Fortinet Global Threat Landscape 2026](../supplemental/08-fortinet-global-threat-landscape-2026.md) |
+
+These sources notably strengthen three conclusions already present in the architecture:
+
+- **API and browser surfaces deserve explicit inventory and telemetry**, not just application-level WAF coverage.
+- **Agentic AI belongs inside the Identity and Control Planes**, with continuous authorization at tool/API boundaries.
+- **Availability defense is increasingly machine-speed**, especially for DDoS and rapid exploitation.
+
 ## What qualifies as a cross-source signal?
 
 A repository-level conclusion is treated as a **cross-source signal** when at least one of these is true:

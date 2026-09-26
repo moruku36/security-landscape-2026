@@ -57,6 +57,18 @@ flowchart LR
 - ENISA Threat Landscape 2026 — [日本語](reports/07-enisa-threat-landscape-2026.ja.md) / [EN](reports/07-enisa-threat-landscape-2026.md)
 - [Report Index / Evidence Guide](reports/README.md)
 
+### 補完レポート / Supplemental Research
+
+- [Google Cloud Threat Horizons H1 2026](supplemental/01-google-cloud-threat-horizons-h1-2026.ja.md) — Cloud / CI/CD / Forensic Readiness
+- [Sophos Active Adversary 2026](supplemental/02-sophos-active-adversary-2026.ja.md) — Identity / IR / Off-hours / Log Retention
+- [Cloudflare Threat Report 2026](supplemental/03-cloudflare-threat-report-2026.ja.md) — SaaS / Token Theft / Trusted Cloud / DDoS
+- [Cloudflare DDoS H1 2026](supplemental/04-cloudflare-ddos-h1-2026.ja.md) — Availability / DNS / DDoS
+- [Akamai Apps/APIs/DDoS 2026](supplemental/05-akamai-app-api-ddos-2026.ja.md) — API / App / DNS / AI Coding
+- [Akamai Agentic Threat Landscape 2026](supplemental/06-akamai-agentic-threat-landscape-2026.ja.md) — Agent / MCP / Browser / Nonhuman Identity
+- [Check Point Cyber Security Report 2026](supplemental/07-check-point-cyber-security-report-2026.ja.md) — AI / MCP / Edge / Hybrid
+- [Fortinet Global Threat Landscape 2026](supplemental/08-fortinet-global-threat-landscape-2026.ja.md) — Exploit Velocity / Network / Legitimate Tool
+- [Supplemental Research一覧](supplemental/README.md)
+
 ### カンファレンス
 
 - [RSAC 2026](conferences/01-rsac-2026.md)
@@ -183,13 +195,8 @@ flowchart TB
 3. **Conference資料も日本語版を追加する**  
    RSAC / Black Hat / DEF CON / FIRST CTI / FIRSTCONについても、`reports/` と同じ英語・日本語のペア構成にすると、Repository全体の一貫性が上がります。
 
-4. **Source UpdateのMonitoringを自動化する**  
-   将来的には、
-   - Annual Reportの新版公開
-   - Official URL変更
-   - Framework Version更新
-   - Cloud Security Guidance更新  
-   を軽量に検知できる仕組みを追加すると保守が楽になります。
+4. **Source Update Monitoring — 実装済み**  
+   月1回、主要な公式Landing Pageを確認し、新EditionのMarkerを検知したらGitHub Issueを自動作成する [Security Source Monitor](monitor/README.md) を追加しました。今後はFrameworkやCloud Security GuidanceもRegistryへ必要に応じて追加します。
 
 5. **CHANGELOG / Release Tagを導入する**  
    まとまった更新ごとに、
@@ -205,7 +212,8 @@ flowchart TB
 
 更新するときは次を確認します。
 
-- [ ] 主要7レポートに新版が出ていないか確認
+- [ ] Core 7レポートに新版が出ていないか確認
+- [ ] Supplemental ReportのSource Monitor結果を確認
 - [ ] Conferenceの追加公開資料・研究を確認
 - [ ] 重要統計とObservation Periodを再確認
 - [ ] 英語版と日本語版を同時に更新

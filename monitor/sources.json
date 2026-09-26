@@ -1,0 +1,141 @@
+{
+  "checked_baseline": "2026-09-27",
+  "sources": [
+    {
+      "id": "mandiant-mtrends",
+      "name": "Mandiant M-Trends",
+      "url": "https://cloud.google.com/security/resources/m-trends",
+      "current": "M-Trends 2026",
+      "next_patterns": [
+        "M-Trends 2027",
+        "M.Trends 2027"
+      ]
+    },
+    {
+      "id": "verizon-dbir",
+      "name": "Verizon DBIR",
+      "url": "https://www.verizon.com/business/resources/reports/dbir/",
+      "current": "2026 DBIR",
+      "next_patterns": [
+        "2027 DBIR",
+        "2027 Data Breach Investigations Report"
+      ]
+    },
+    {
+      "id": "crowdstrike-gtr",
+      "name": "CrowdStrike Global Threat Report",
+      "url": "https://www.crowdstrike.com/en-us/global-threat-report/",
+      "current": "2026 Global Threat Report",
+      "next_patterns": [
+        "2027 Global Threat Report"
+      ]
+    },
+    {
+      "id": "unit42-ir",
+      "name": "Unit 42 Global Incident Response Report",
+      "url": "https://www.paloaltonetworks.com/resources/research/unit-42-incident-response-report",
+      "current": "2026 Global Incident Response Report",
+      "next_patterns": [
+        "2027 Global Incident Response Report",
+        "2027 Incident Response Report"
+      ]
+    },
+    {
+      "id": "microsoft-mddr",
+      "name": "Microsoft Digital Defense Report",
+      "url": "https://www.microsoft.com/en-us/security/security-insider/threat-landscape",
+      "current": "Microsoft Digital Defense Report 2025",
+      "next_patterns": [
+        "Microsoft Digital Defense Report 2026",
+        "Digital Defense Report 2026"
+      ]
+    },
+    {
+      "id": "ibm-xforce",
+      "name": "IBM X-Force Threat Intelligence Index",
+      "url": "https://www.ibm.com/reports/threat-intelligence",
+      "current": "2026 Threat Intelligence Index",
+      "next_patterns": [
+        "2027 Threat Intelligence Index",
+        "Threat Intelligence Index 2027"
+      ]
+    },
+    {
+      "id": "enisa-tl",
+      "name": "ENISA Threat Landscape",
+      "url": "https://www.enisa.europa.eu/publications/enisa-threat-landscape-2026",
+      "current": "ENISA Threat Landscape 2026",
+      "next_patterns": [
+        "ENISA Threat Landscape 2027"
+      ]
+    },
+    {
+      "id": "google-cth",
+      "name": "Google Cloud Threat Horizons",
+      "url": "https://cloud.google.com/security/report/resources/cloud-threat-horizons-report-h1-2026",
+      "current": "H1 2026",
+      "next_patterns": [
+        "H2 2026",
+        "H1 2027"
+      ]
+    },
+    {
+      "id": "sophos-active",
+      "name": "Sophos Active Adversary",
+      "url": "https://www.sophos.com/en-us/blog/2026-sophos-active-adversary-report",
+      "current": "Active Adversary Report 2026",
+      "next_patterns": [
+        "Active Adversary Report 2027",
+        "2027 Sophos Active Adversary"
+      ]
+    },
+    {
+      "id": "cloudflare-threat",
+      "name": "Cloudflare Threat Report",
+      "url": "https://blog.cloudflare.com/2026-threat-report/",
+      "current": "2026 Cloudflare Threat Report",
+      "next_patterns": [
+        "2027 Cloudflare Threat Report",
+        "2027 Threat Report"
+      ]
+    },
+    {
+      "id": "cloudflare-ddos",
+      "name": "Cloudflare DDoS Threat Report",
+      "url": "https://blog.cloudflare.com/ddos-threat-report-2026-h1/",
+      "current": "H1 2026",
+      "next_patterns": [
+        "H2 2026",
+        "2027 DDoS Threat Report"
+      ]
+    },
+    {
+      "id": "akamai-soti",
+      "name": "Akamai State of the Internet Security",
+      "url": "https://www.akamai.com/blog/security/apps-apis-ddos-2026-industrialization-cyberattack-campaigns",
+      "current": "2026 SOTI Security",
+      "next_patterns": [
+        "2027 State of the Internet",
+        "2027 SOTI"
+      ]
+    },
+    {
+      "id": "checkpoint-csr",
+      "name": "Check Point Cyber Security Report",
+      "url": "https://research.checkpoint.com/2026/cyber-security-report-2026/",
+      "current": "Cyber Security Report 2026",
+      "next_patterns": [
+        "Cyber Security Report 2027"
+      ]
+    },
+    {
+      "id": "fortinet-gtr",
+      "name": "Fortinet Global Threat Landscape Report",
+      "url": "https://www.fortinet.com/resources/reports/threat-landscape-report",
+      "current": "2026 Global Threat Landscape Report",
+      "next_patterns": [
+        "2027 Global Threat Landscape Report"
+      ]
+    }
+  ]
+}

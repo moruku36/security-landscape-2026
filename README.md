@@ -61,6 +61,18 @@ Seven themes recur across the 2026 evidence base:
 - ENISA Threat Landscape 2026 — [EN](reports/07-enisa-threat-landscape-2026.md) / [JA](reports/07-enisa-threat-landscape-2026.ja.md)
 - [Report index and evidence guide](reports/README.md)
 
+### Supplemental 2026 research
+
+- [Google Cloud Threat Horizons H1 2026](supplemental/01-google-cloud-threat-horizons-h1-2026.md) — cloud / CI/CD / forensic readiness
+- [Sophos Active Adversary 2026](supplemental/02-sophos-active-adversary-2026.md) — identity / IR / off-hours / log retention
+- [Cloudflare Threat Report 2026](supplemental/03-cloudflare-threat-report-2026.md) — SaaS / token theft / trusted cloud / DDoS
+- [Cloudflare DDoS H1 2026](supplemental/04-cloudflare-ddos-h1-2026.md) — availability / DNS / hyper-volumetric DDoS
+- [Akamai Apps/APIs/DDoS 2026](supplemental/05-akamai-app-api-ddos-2026.md) — API / app / DNS / AI coding
+- [Akamai Agentic Threat Landscape 2026](supplemental/06-akamai-agentic-threat-landscape-2026.md) — agent / MCP / browser / nonhuman identity
+- [Check Point Cyber Security Report 2026](supplemental/07-check-point-cyber-security-report-2026.md) — AI / MCP / edge / hybrid attack paths
+- [Fortinet Global Threat Landscape 2026](supplemental/08-fortinet-global-threat-landscape-2026.md) — exploit velocity / network / legitimate tools
+- [Supplemental research index](supplemental/README.md)
+
 ### Conferences
 
 - [RSAC 2026](conferences/01-rsac-2026.md)
@@ -202,12 +214,8 @@ Recommended backlog, in order:
 3. **Conference bilingual expansion**  
    Add Japanese editions for RSAC, Black Hat, DEF CON, FIRST CTI, and FIRSTCON using the same bilingual pattern as `reports/`.
 
-4. **Source-change automation**  
-   Add lightweight monitoring for:
-   - new annual-report editions;
-   - changed official URLs;
-   - framework/version updates;
-   - major cloud-security architecture updates.
+4. **Source-change automation — implemented**  
+   The repository now includes a monthly [security source monitor](monitor/README.md) that checks official landing pages for next-edition markers and opens a GitHub Issue when a likely refresh is detected. Continue expanding the registry for frameworks and cloud-security guidance as needed.
 
 5. **Release/version discipline**  
    Add `CHANGELOG.md` and GitHub releases/tags for meaningful repository snapshots, for example:
@@ -222,7 +230,8 @@ Recommended backlog, in order:
 
 For each refresh:
 
-- [ ] Check all seven annual-report publishers for a newer edition.
+- [ ] Check all seven core annual-report publishers for a newer edition.
+- [ ] Review the supplemental-report monitor results.
 - [ ] Check major conference follow-up material and published research.
 - [ ] Re-verify important statistics and observation periods.
 - [ ] Update English and Japanese report editions together.

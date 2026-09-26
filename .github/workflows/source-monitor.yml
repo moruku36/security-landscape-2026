@@ -1,0 +1,76 @@
+name: Security source monitor
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 1 1 * *"
+  push:
+    paths:
+      - "monitor/**"
+      - "tools/check_sources.py"
+      - ".github/workflows/source-monitor.yml"
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Check official source pages
+        run: |
+          mkdir -p monitor
+          python tools/check_sources.py \
+            --registry monitor/sources.json \
+            --output monitor/source-status.json
+
+      - name: Upload monitor result
+        uses: actions/upload-artifact@v4
+        with:
+          name: security-source-monitor
+          path: monitor/source-status.json
+
+      - name: Open or update review issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require("fs");
+            const result = JSON.parse(fs.readFileSync("monitor/source-status.json", "utf8"));
+            if (!result.alerts || result.alerts.length === 0) {
+              core.info("No potential new editions detected.");
+              return;
+            }
+
+            const title = "Source monitor: potential new editions detected";
+            const lines = result.alerts.map(a =>
+              `- **${a.name}** — current: ${a.current}; marker(s): ${a.next_markers_found.join(", ")}; ${a.url}`
+            );
+            const body = [
+              "The scheduled source monitor found text that may indicate a new report edition or major refresh.",
+              "",
+              ...lines,
+              "",
+              `Checked: ${result.checked_at}`,
+              "",
+              "Please verify the official primary source before updating bilingual report notes or architecture conclusions."
+            ].join("\n");
+
+            const { owner, repo } = context.repo;
+            const existing = await github.rest.issues.listForRepo({
+              owner, repo, state: "open", per_page: 100
+            });
+            const issue = existing.data.find(i => i.title === title && !i.pull_request);
+
+            if (issue) {
+              if (issue.body !== body) {
+                await github.rest.issues.update({
+                  owner, repo, issue_number: issue.number, body
+                });
+              }
+            } else {
+              await github.rest.issues.create({ owner, repo, title, body });
+            }

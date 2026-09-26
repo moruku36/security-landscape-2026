@@ -16,6 +16,19 @@ This source register separates **threat evidence**, **conference signals**, **fr
 | IBM X-Force | Threat Intelligence Index 2026 | 2025 X-Force threat intelligence / incident observations | https://www.ibm.com/reports/threat-intelligence |
 | ENISA | Threat Landscape 2026 | Events/incidents observed 2025-01-01 through 2025-12-31; published 2026-09-22 | https://www.enisa.europa.eu/publications/enisa-threat-landscape-2026 |
 
+## Supplemental 2026 research
+
+| Source | Edition / focus | Observation scope / note | Official URL |
+|---|---|---|---|
+| Google Cloud | Cloud Threat Horizons H1 2026 | Primarily H2 2025 cloud/SaaS/CI-CD/forensics | https://cloud.google.com/security/report/resources/cloud-threat-horizons-report-h1-2026 |
+| Sophos X-Ops | Active Adversary Report 2026 | 661 IR/MDR cases, 70 countries, 34 industries | https://www.sophos.com/en-us/blog/2026-sophos-active-adversary-report |
+| Cloudflare | 2026 Threat Report | Internet-scale threat intelligence, SaaS/token/DDoS | https://blog.cloudflare.com/2026-threat-report/ |
+| Cloudflare | DDoS Threat Report H1 2026 | Jan-Jun 2026 DDoS telemetry | https://blog.cloudflare.com/ddos-threat-report-2026-h1/ |
+| Akamai | SOTI Security 2026 — Apps/APIs/DDoS | API, web, DNS, DDoS and AI-development risk | https://www.akamai.com/blog/security/apps-apis-ddos-2026-industrialization-cyberattack-campaigns |
+| Akamai | SOTI Security 2026 — Agentic Threat Landscape | Agent, MCP, browser, machine identity | https://www.akamai.com/blog/security/2026/sep/beyond-identity-governing-the-agentic-enterprise |
+| Check Point Research | Cyber Security Report 2026 | AI, MCP, ransomware, edge, hybrid attack paths | https://research.checkpoint.com/2026/cyber-security-report-2026/ |
+| FortiGuard Labs | 2026 Global Threat Landscape Report | Exploit velocity, network telemetry, identity/tool abuse | https://www.fortinet.com/resources/reports/threat-landscape-report |
+
 ## Conferences
 
 ### RSAC 2026
