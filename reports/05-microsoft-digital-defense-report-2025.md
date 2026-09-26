@@ -1,29 +1,77 @@
+---
+publisher: "Microsoft"
+edition: "Microsoft Digital Defense Report 2025"
+publication_date: "2025-10-16"
+observation_period: "multiple Microsoft telemetry and intelligence datasets; report-specific periods"
+dataset_or_scope: "Microsoft security, identity, cloud, fraud and threat-intelligence telemetry"
+geography: "Global"
+primary_source: "https://www.microsoft.com/en-us/security/security-insider/threat-landscape/microsoft-digital-defense-report-2025"
+last_verified: "2026-09-26"
+---
+
 # Microsoft Digital Defense Report 2025
 
-Source: https://www.microsoft.com/en-us/security/security-insider/threat-landscape/microsoft-digital-defense-report-2025
-
-> Note: 2026-09-26時点で公開されている最新のMicrosoft Digital Defense Report年次版として2025 editionを収録。
+> This is the latest annual Microsoft Digital Defense Report available as of the repository snapshot date, 2026-09-26.
 
 ## Positioning
 
-Microsoftの大規模telemetryを背景に、Cybercrime / Nation State / Identity / Cloud / AI / Resilienceまで広く扱う戦略寄りのレポート。
+MDDR is broader than a pure incident-response report. It combines cybercrime, nation-state activity, identity, cloud, AI, fraud, resilience, and geopolitical context.
 
-## Key findings
+## Key findings highlighted by Microsoft
 
-- Destructive campaigns targeting cloud: +87%。
-- AI-driven phishingはtraditional campaignより約3倍効果的と報告。
-- Ransomware attackの40%超にhybrid component。
-- Microsoft IRのinitial accessではphishing/social engineering 28%、unpatched web assets 18%、exposed remote services 12%。
-- Known motivationのあるIRでは、financially motivated cybercrimeが大多数で、espionageは4%。
+| Finding | Context | Evidence |
+|---|---|---|
+| Destructive campaigns targeting cloud increased **87%** | Microsoft report summary | [Microsoft](https://www.microsoft.com/en-us/security/security-insider/threat-landscape/microsoft-digital-defense-report-2025) |
+| AI-driven phishing was reported as **3× more effective** than traditional campaigns | Report summary | [Microsoft](https://www.microsoft.com/en-us/security/security-insider/threat-landscape/microsoft-digital-defense-report-2025) |
+| More than **40%** of ransomware attacks had a hybrid component | Report summary | [Microsoft](https://www.microsoft.com/en-us/security/security-insider/threat-landscape/microsoft-digital-defense-report-2025) |
+| AI-driven forgeries increased **195% globally** | Synthetic-identity section | [Microsoft](https://www.microsoft.com/en-us/security/security-insider/threat-landscape/microsoft-digital-defense-report-2025) |
 
-## Strategic message
+## Strategic themes
 
-Microsoftが強調するのは Innovation / Resilience / Collaboration / Speed。
+Microsoft frames the defensive response around:
 
-特にEnterprise Architectureでは、**Assume Breach + Business Continuity**の組み合わせが重要。Security architectureとBCP/DRを別チームの別テーマにしない方がよい。
+- innovation;
+- resilience;
+- collaboration;
+- speed and scale.
 
-## Architecture implication
+The report explicitly calls out identity and cloud resilience, secure-by-default practices, and automated response.
 
-- Identity + Cloud Resilienceを一体で設計。
-- Secure-by-defaultとZero Trustをplatform governanceに落とす。
-- AI adoptionにはAI-specific securityだけでなく、data / identity / governanceを先に整備する。
+## Architecture interpretation
+
+### Identity + Cloud
+
+Identity compromise and cloud destructive activity should be modeled together. A privileged identity is a control-plane credential.
+
+### Business continuity
+
+Microsoft's "assume breach" resilience message aligns with separating recovery architecture from the normal production trust boundary.
+
+### AI
+
+Microsoft describes AI as:
+
+- attacker accelerator;
+- defensive automation mechanism;
+- new attack surface.
+
+This supports managing agent identity, data access, model/app security, and tool authority as part of normal enterprise controls.
+
+## Architecture actions
+
+- Secure-by-default platform guardrails.
+- Identity and cloud-resilience integration.
+- Automated response for time-critical, high-confidence events.
+- AI security framework covering discovery, protection, data, agents, applications, and models.
+- Cross-industry / CERT / government collaboration for disruption and intelligence.
+
+## Limitations
+
+- This edition predates several 2026 reports in the repository.
+- Microsoft uses multiple telemetry populations rather than one uniform incident sample.
+- It should therefore be used for strategic context, not direct percentage comparison with IR-only reports.
+
+## Sources
+
+- https://www.microsoft.com/en-us/security/security-insider/threat-landscape/microsoft-digital-defense-report-2025
+- https://www.microsoft.com/en-us/security/security-insider/threat-landscape/microsoft-digital-defense-report-archives

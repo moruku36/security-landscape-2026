@@ -1,47 +1,85 @@
+---
+event: "2026 FIRST Cyber Threat Intelligence Conference"
+date: "2026-04-21 to 2026-04-23"
+location: "Munich, Germany"
+evidence_type: "CTI practitioner conference / workshops / plenary sessions"
+primary_source: "https://www.first.org/conference/firstcti26/"
+last_verified: "2026-09-26"
+---
+
 # FIRST Cyber Threat Intelligence Conference 2026
-
-Sources:
-- https://www.first.org/conference/firstcti26/
-- https://www.first.org/conference/firstcti26/program
-- https://www.first.org/newsroom/releases/20260423
-
-Munich, 2026-04-21〜23.
 
 ## Positioning
 
-CTIを「レポートを書く仕事」ではなく、Detection / IR / Decisionへ接続するoperational disciplineとして扱うカンファレンス。
+FIRST CTI is valuable because it connects intelligence to operations. The 2026 event explicitly focused on AI-driven CTI, detection engineering, intelligence standards, workshops, and practitioner workflows.
 
-## Dominant themes
+## Operational themes
 
-### From signal to action
+### Intelligence must lead to action
 
-FIRST公式recapでは、Operationalizing Intelligenceがdominant theme。Collectionをstakeholder requirementに合わせること、enrichment自動化、noise削減など、意思決定につながらないintelは価値が低いという実務的な方向。
+The useful CTI lifecycle is:
 
-### AI + CTI
-
-- LLM / RAG / cognitive automationによるanalyst productivity
-- Poisoned OSINT
-- CTI RAG pipelineのintegrity
-- AI-assisted analysisへのadversarial manipulation
-
-### Detection Engineering
-
-ProgramにはSigmaを使ったDetection Engineering workshop、Open SourceによるCloud Forensics lab on GCPなどが含まれた。
-
-## Interpretation
-
-CTI、SIEM、Detection Engineering、IRを別々の機能として分割しすぎない方がよい。
-
-```text
-PIR / Intelligence Requirement
-        ↓
-Collection / Enrichment
-        ↓
-Detection-as-Code
-        ↓
-Investigation / Response
-        ↓
-Feedback to Controls
+```mermaid
+flowchart LR
+    R[Requirements] --> C[Collection]
+    C --> E[Enrichment]
+    E --> A[Analysis]
+    A --> D[Detection]
+    D --> IR[Investigation / Response]
+    IR --> F[Feedback]
+    F --> R
 ```
 
-この閉ループがSecOpsの成熟度を決める。
+The failure mode is producing reports that never become detection or control changes.
+
+### Detection Engineering is part of CTI
+
+The official workshop program included **Detection Engineering with Sigma**, covering event and correlation rules.
+
+That makes the relationship explicit:
+
+```text
+Threat intelligence
+→ behavioral hypothesis
+→ portable detection
+→ validation
+→ investigation
+```
+
+### Cloud forensics is becoming normal IR work
+
+The program included a hands-on open-source cloud-forensics workshop using GCP.
+
+Architecture implication:
+
+> Cloud audit and forensic evidence must be designed before an incident, not collected for the first time during one.
+
+### AI-assisted CTI needs its own integrity model
+
+FIRST's post-event summary highlighted AI-driven CTI.
+
+LLM/RAG-based analysis can improve analyst productivity, but it introduces:
+
+- poisoned OSINT;
+- retrieval integrity risk;
+- prompt/context manipulation;
+- attribution uncertainty;
+- false confidence.
+
+AI output should therefore remain evidence-linked and reviewable.
+
+## Enterprise operating-model takeaway
+
+Mature SecOps should not separate CTI, detection engineering, and IR into document handoffs.
+
+The target model is a closed feedback loop with shared data models, version-controlled rules, validation, and incident feedback.
+
+## Evidence caveat
+
+FIRST CTI represents practitioner methods and conference content; it does not provide a global attack-prevalence denominator.
+
+## Sources
+
+- https://www.first.org/conference/firstcti26/
+- https://www.first.org/conference/firstcti26/program
+- https://www.first.org/newsroom/releases/20260423

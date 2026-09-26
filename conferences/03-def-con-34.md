@@ -1,40 +1,88 @@
+---
+event: "DEF CON 34"
+date: "2026-08-06 to 2026-08-09"
+location: "Las Vegas Convention Center, Las Vegas"
+evidence_type: "Community technical research / villages / hands-on competitions"
+primary_source: "https://forum.defcon.org/node/253965"
+last_verified: "2026-09-26"
+---
+
 # DEF CON 34
-
-Sources:
-- Official date announcement: https://forum.defcon.org/node/253965
-- AI Village: https://aivillage.org/events/defcon-34/
-- Cloud Village: https://www.cloud-village.org/dc34
-- Recon Village: https://reconvillage.org/reconvillage-2026-defcon-34/talks
-- Community program index: https://defcon.outel.org/dcwp/dc34/activities/dctalkslist/
-
-Las Vegas Convention Center, 2026-08-06〜09.
 
 ## Positioning
 
-Black Hatよりcommunity / hacker / hands-on寄り。製品戦略よりも、実際に何を壊せるか、既存技術のassumptionがどこで破れるかを見るのに向く。
+DEF CON is a hands-on adversarial research signal. Its value is in exposing where **real-world trust assumptions break** across AI, cloud, identity, OT/ICS, hardware, protocols, and operational tooling.
+
+Because DEF CON is decentralized across villages, this note uses official/community event sources rather than treating one page as a complete program.
 
 ## 2026 signals
 
-### AI infrastructure becomes a target
+### AI agents become offensive actors
 
-AI Villageでは12 stage sessions、34 poster presentations、6 fireside chats、2 competitionsを実施。HalCTFでは、人間がtargetを直接操作せず、autonomous agent自身にsandbox targetを攻略させる形式が採用された。
+AI Village's **HalCTF: Hostile Autonomous Layer CTF** required participants to build autonomous agents and deploy them against sandboxed challenges.
 
-Recon Villageでは、exposed inference endpointやleaked AI API keyを悪用し、他者のinference resourceを攻撃活動に転用する研究が紹介された。
+That is a meaningful shift in threat modeling:
 
-### Cloud is still a hacking surface
+```text
+Human operator
+→ tool
 
-Cloud Villageではoffensive/defensive cloud securityを中心にtalk/workshop/CTFを展開。2026年の年次レポート群が指摘するcloud-conscious intrusionときれいにつながる。
+becomes
 
-### OT / ICS and edge remain important
+Human/operator objective
+→ autonomous agent
+→ tool chain
+→ target
+```
 
-ICS VillageではOT protocol exploitation、threat hunting、AI-driven attack tooling、electric-sector incidentなどが扱われた。
+The defensive question therefore becomes:
 
-### Trusted technology can be weaponized
+- what authority can the agent obtain?
+- how does it choose tools?
+- what telemetry exists for autonomous actions?
+- what safety boundary exists when the model behaves unexpectedly?
 
-DEF CONの技術研究では、AI runtime、WMI、EDR、AD/Kerberos、WAF、IoT cloudなど「防御側が当然信頼している仕組み」そのものを攻撃面として捉える流れが強い。
+### Cloud remains a first-class hacking surface
 
-## Interpretation
+Cloud Village at DEF CON 34 ran talks, workshops, labs, and CTFs around offensive and defensive cloud security.
 
-DEF CONからEnterprise側が持ち帰るべきなのは「そのexploitを明日使われるか」ではなく、**trust assumptionを定期的にred-teamする文化**。
+This is consistent with CrowdStrike, Unit 42, Microsoft, and M-Trends signals that cloud control planes and trusted cloud/SaaS relationships are attack paths—not merely hosting locations.
 
-特に2026年はAI Agent / Local AI Runtime / Cloud / Identity / EDR bypassの境界が重なってきた。
+### Recon and exposed AI infrastructure are converging
+
+Recon-oriented community research included exposed inference endpoints and leaked API-key style scenarios.
+
+Architecture implication:
+
+> AI infrastructure must be part of external attack-surface management and secrets governance.
+
+### OT/ICS, identity, runtime, and protocol trust remain active research areas
+
+DEF CON villages continue to demonstrate that trusted protocols and operational technology can become attack surfaces when assumptions are not continuously validated.
+
+## Enterprise use
+
+Translate DEF CON signals into **red-team hypotheses**, not immediate panic.
+
+Recommended flow:
+
+```text
+Novel research
+→ identify prerequisite
+→ test enterprise exposure
+→ map reachable privilege
+→ add telemetry
+→ validate mitigations
+```
+
+## Evidence caveat
+
+Village and competition programs are forward-looking technical signals. They are not evidence that a technique is prevalent in enterprise incidents.
+
+## Sources
+
+- https://forum.defcon.org/node/253965
+- https://aivillage.org/events/defcon-34/
+- https://www.cloud-village.org/dc34
+- https://reconvillage.org/reconvillage-2026-defcon-34/talks
+- https://defcon.outel.org/dcwp/dc34/activities/dctalkslist/ — community-maintained index

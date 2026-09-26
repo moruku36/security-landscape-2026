@@ -1,14 +1,88 @@
-# Mandiant M-Trends 2026
+---
+publisher: "Google Cloud / Mandiant"
+edition: "M-Trends 2026"
+publication_date: "2026-03-23"
+observation_period: "2025-01-01 to 2025-12-31"
+dataset_or_scope: "500,000+ hours of Mandiant frontline incident investigations"
+geography: "Global"
+primary_source: "https://cloud.google.com/security/resources/m-trends-executive-edition"
+last_verified: "2026-09-26"
+---
 
-Source: https://cloud.google.com/security/resources/m-trends-executive-edition
+# Mandiant M-Trends 2026
 
 ## Positioning
 
-MandiantãŒ2025å¹´ã«å®Ÿæ–½ã—ãŸ50ä¸‡æ™‚é–“è¶…ã®ã‚¤ãƒ³ã‚·ãƒ‡ãƒ³ãƒˆèª¿æŸ»ã‚’åŸºç¤ã«ã—ãŸã€frontline IRå¯„ã‚Šã®å¹´æ¬¡ãƒ¬ãƒãƒ¼ãƒˆã€‚æ”»æ’ƒè€…ãŒã€Œå®Ÿéš›ã«ä¾µå®³å¾Œã©ã†å‹•ã„ãŸã‹ã€ã‚’ç†è§£ã™ã‚‹ã®ã«å¼·ã„ã€‚
+M-Trends is a frontline incident-response report. Its value is not broad population prevalence; it is detailed observation of organizations that required Mandiant investigation and response.
 
 ## Key findings
 
-- Initial infection vectorã¯ExploitãŒ32%ã§6å¹´é€£ç¶šãƒˆãƒƒãƒ—ã€‚
-- Voice phishingãŒ11%ã¾ã§ä¸Šæ˜‡ã—ã€email phishingã¯6%ã¸ä½ä¸‹ã€‚
-- Global median dwell timeã¯11æ—¥ã‹ã‚‰14æ—¥ã«å¢—åŠ ã€‚Espionageã¨DPRK IT workerç³»ã§ã¯é•·æœŸæ½œä¼ãŒç›®ç«‹ã¤ã€‚
-- Initial accesså´ã‹ã‚‰secondary threat groupã¸ã®handoffä¸­å¤®å€¤ãŒ22ç§’ã¾ã§ç›yî+¸à ‚‹H”’PÒÔÕÔ“ze¨º`(øàiøàkùnlùgaÌÎLù¥éxàk™Ù[[Yxàc:)¬ù®+8àexà£8à NL9¥éxàëxà¬8àiøàkùb'y§'ù/­yaixào¸àiú`hxà£8àj¸àa9cëú ïy )øà¤¹é.¸àfxà ‚‹HYÙH\X[˜Ùxà¡š\X[^˜][Û¸àj¸àjxà QQ¸à¤¹ïk¸àdxàj¸àaùïk¸àcxàjøàcøàa:h&9gçøàn8àkœ\œÚ\İ[˜Ùxàc:aãz) xàá¸àï8àç¸à ‚‹HRxàkÜ™XÛÛ¸à \ÛØÚX[[™Ú[™Y\š[™øà [X[Ø\™H]™[ÜY[8à¤¹b¨:`'øàfxà¢øàc8à SX[™X[8àkøà#9/­yk¬øàk¹i)ùcb¸àcRz-mùfè8àjøàj¸àhøàgøà£øàdxàiøàkøàj¸àa8à#xàj9¦#¹è®¸àjøàeøài¸àa8à¢øà ‚‚ˆÈÈ[\œ™]][Û‚‚“KU™[™ÈŒ¸àk¹§+:,ê¸àkøà JŠ‘[™Ú[9.+yoàøàk”ÓĞøàè¸àáøàêøàjù«nú)ä¸àc8à`¸à¢ÊŠ¸àj8àa8àaº+i¹db¸à ‚‚˜^•\Ù\ˆÈ[™Ú[8¡¤ˆQ¸àc9«å:/ ùæ¡9o-øàa’Y[]HÈÙ\ÜÚ[Ûˆ8¡¤ˆ:*£z*/9o£8àk¹ ª¹å*8àkú)¢øàb8àjøàcøàa‘YÙHÈ”ˆÈš\™]Ø[8¡¤ˆYÙ[8à¤¹aixà£8à¢xà£8àj¸àa’\\š\ÛÜˆ8¡¤ˆİY\İÔøà¢8à¢¹."øàk¹li”ØXTÈÈĞ]]8¡¤ˆ[™Ú[9i%¸àiùª*¹leze¢Â˜XÚİ\È™XÛİ™\H8¡¤ˆ9/­yk¬ùo£8àk¹.¢ù©kyí¦yí¦¸àjùæí9íd˜‚ˆÈÈÈ\˜Ú]Xİ\™H[\XØ][Û‚‚‹HYÈ\\š\ÛÜˆÈYÙHÈ˜XÚİ\8à¤•Y\‹L\ÜÙ]8àj8àeøài¹¢lxàa¸à ‚‹H™]ÛÜšÈ\X[˜Ùxàk˜YZ[ˆÙøà X]][XØ][ÛˆÙøà ]š\X[^˜][ÛˆÙøà¤”ÒQSxàn9ílyd"8àfxà¢øà ‚‹HÙÈ™][[Û¸àkøà#8à¬øà®xàâ9§ 9l#ùc%¸à#xàh8àdxàiøàj¸àcøà zemù§'ù¯g9/#øà¤¹bcy£ä8àjú*+z*"8àfxà¢øà ‚‹H[\Úùíc9å,xàk“QH™\Ù]8à¡š\Ú[™øà¤’Y[]HÙXİ\š]xàk¹. :`ê8àj8àeøài¹¢lxàa¸à ‚‚ˆÈÈÚH]X]\œÈ›ÜˆÛİYÈ[\œš\ÙHU‚ÛİY9éîú(c8àeøài¸à ¸à y¥.ù¤ úgh¸àkĞÛİYTxàh8àdxàiøàkøàj¸àa8à ¸àª¸àìøàåøàë8àkš\X[^˜][Û¸à ZXœšYY[]xà TØXTÈÛÛ›™XİÜ¸à YYÙH\X[˜Ùxàc9. 9§+8àk˜]XÚÈ]8àj8àeøài¸ài8àj¸àc8à¢øàgøà xà PÛİYÙXİ\š]xàjÛÜœÜ˜]HUÙXİ\š]xà¤¹b!ºfè¸àeøàiº  øàb8àjøàcøàcøàj¸àhøài¸àa8à¢øà ‚
+| Finding | Observation context | Evidence |
+|---|---|---|
+| Exploits were the leading initial infection vector at **32%**, for the sixth consecutive year | 2025 Mandiant investigations | [Google Cloud](https://cloud.google.com/security/resources/m-trends-executive-edition) |
+| Voice phishing rose to **11%**, becoming the second-most observed vector; email phishing fell to **6%** | 2025 investigations | [Google Cloud](https://cloud.google.com/security/resources/m-trends-executive-edition) |
+| Global median dwell time rose from 11 to **14 days** | 2025 vs 2024 | [Google Cloud](https://cloud.google.com/blog/topics/threat-intelligence/m-trends-2026/) |
+| Cyber-espionage and DPRK IT-worker incidents each had a median dwell time of **122 days** | 2025 investigations | [Google Cloud](https://cloud.google.com/security/resources/m-trends-executive-edition) |
+| Median initial-access-to-secondary-group handoff fell to **22 seconds** | 2025, compared with 8+ hours in 2022 | [Google Cloud](https://cloud.google.com/security/resources/m-trends-executive-edition) |
+| BRICKSTORM-related cases averaged **393 days** of dwell time | Relevant Mandiant cases | [Google Cloud](https://cloud.google.com/security/resources/m-trends-executive-edition) |
+
+## What the source says
+
+Mandiant describes a split in attacker pacing:
+
+- high-velocity cybercrime optimized for fast handoff, impact, extortion, and recovery denial;
+- long-lived espionage / insider-style access optimized for persistence in infrastructure with limited visibility.
+
+Edge devices and infrastructure outside normal endpoint telemetry receive particular attention.
+
+The report also explicitly argues that 2025 was **not** a year in which most successful breaches were directly caused by AI. AI is an accelerator, while foundational security gaps remain the dominant enabler.
+
+## Architecture interpretation
+
+### Identity Plane
+
+Vishing, credential theft, SaaS integration tokens, and OAuth consent mean identity controls must include recovery/helpdesk paths and token governanceâ€”not only passwords and MFA.
+
+### Control Plane
+
+Edge devices, hypervisors, network appliances, and SaaS integrations can sit outside endpoint tooling while retaining broad authority.
+
+### Recovery Plane
+
+M-Trends' recovery-denial theme supports treating backup and recovery administration as a separate high-trust plane.
+
+### Telemetry Plane
+
+A 90-day retention model is incompatible with cases where dwell time can extend to many months or more than a year.
+
+## Recommended architecture actions
+
+- Forward edge/network administrative logs centrally.
+- Collect hypervisor-level telemetry.
+- Extend retention for identity, edge, virtualization, and Tier-0 logs.
+- Restrict unverified end-user OAuth/app consent.
+- Treat low-impact initial-access detections as potential precursors to high-impact intrusion.
+- Separate production and recovery authority.
+
+## ATT&CK relevance
+
+Repository mapping:
+
+- T1190 Exploit Public-Facing Application
+- T1078 Valid Accounts
+- T1528 Steal Application Access Token
+- T1550 Use Alternate Authentication Material
+- T1490 Inhibit System Recovery
+
+See [MITRE ATT&CK crosswalk](../frameworks/mitre-attack.md).
+
+## Limitations
+
+- The population is Mandiant Consulting investigations, not all global incidents.
+- Organizations engaging Mandiant may be biased toward higher-impact or more complex incidents.
+- Some sub-themes reflect specific incident clusters and should not be interpreted as universal prevalence.
+
+## Sources
+
+- https://cloud.google.com/security/resources/m-trends-executive-edition
+- https://cloud.google.com/blog/topics/threat-intelligence/m-trends-2026/

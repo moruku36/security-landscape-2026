@@ -1,38 +1,90 @@
+---
+event: "Black Hat USA 2026"
+date: "2026-08-01 to 2026-08-06"
+location: "Las Vegas"
+evidence_type: "Peer-reviewed security research / trainings / Arsenal"
+primary_source: "https://blackhat.com/us-26/briefings.html"
+last_verified: "2026-09-26"
+---
+
 # Black Hat USA 2026
 
-Sources:
-- https://blackhat.com/us-26/briefings.html
-- https://blackhat.com/html/press/2026-06-02.html
-- https://blackhat.com/html/blog/2026-09-01.html
+## Positioning
 
-Las Vegas, 2026-08-01〜06. Briefings: Aug 5-6.
+Black Hat is a **technical leading indicator**. Peer-reviewed Briefings expose attack techniques and security assumptions before they are necessarily common enough to dominate annual incident statistics.
 
-## Scale
+The 2026 program included more than 100 peer-reviewed Briefings, more than 100 Trainings, over 80 Arsenal demos, and specialized forums.
 
-100+ peer-reviewed Briefings、100+ Trainings、120+ Sponsored Sessions、80+ Arsenal demos。
+## Official 2026 themes
 
-## Official major themes
+Black Hat highlighted four program themes:
 
-- AI & Autonomous Threats
-- Cyber Conflict & Live Operations
-- Systems Under Stress
-- Identity, Trust & Control
+- **AI & Autonomous Threats**
+- **Cyber Conflict & Live Operations**
+- **Systems Under Stress**
+- **Identity, Trust & Control**
+
+These themes align closely with the annual-report evidence while extending it into emerging low-level and agentic attack surfaces.
 
 ## Representative technical signals
 
-- Compiler optimizationがsecurity assumptionを壊すTOCTOU研究
-- GPU Rowhammerによるprivilege escalation
-- Unicode/normalization差異を悪用したWAF bypass / XSS / RCE / LLM jailbreak
-- Agentic AI-aided Kubernetes attack & defense
-- LLM integration security
-- OT/ICS security validation tooling
+### Compiler and language assumptions can fail
 
-## Post-conference message
+Research on compiler optimization showed how defensive source-code patterns can become vulnerable after optimization.
 
-Black Hat公式recapは2026年を「agentic age」と整理し、AIが攻撃と防御の双方をmachine speedへ押し上げる一方、predictive defense、secure-by-design、memory safety、attack surface reductionの重要性を強調した。
+Architecture lesson:
 
-## Interpretation
+> Secure coding guidance has to be validated at runtime/binary behavior where the risk warrants it.
 
-M-Trends/DBIRが「何が現場で起きたか」を示すのに対し、Black Hatは**次に一般化しそうな技術リスクを先に見る場**。
+### GPU becomes a privilege boundary
 
-Enterprise architectとしては、個々のexploitを全部追うより、「従来のtrust boundaryがどこで崩れるか」を拾うとよい。
+Research demonstrated targeted Rowhammer-style attacks against NVIDIA GPUs with privilege-escalation implications.
+
+Architecture lesson:
+
+> Accelerators are not just compute capacity; they are part of the isolation and trust model of AI infrastructure.
+
+### Unicode normalization becomes a cross-layer attack surface
+
+Research showed how malformed/normalized Unicode can cross boundaries between WAFs, web applications, and LLM systems.
+
+Architecture lesson:
+
+> Input canonicalization and validation must be consistent across security controls and application/model layers.
+
+### Agentic AI enters offensive and defensive workflows
+
+Trainings included agentic AI-assisted Kubernetes attack/defense and LLM integration security.
+
+Architecture lesson:
+
+> Agentic tools should be threat-modeled as software identities with tool authority, not as interactive chat interfaces.
+
+### OT/ICS security validation remains relevant
+
+Arsenal included tooling for OT/ICS security coverage validation.
+
+## Architecture interpretation
+
+Black Hat helps identify **future trust-boundary failures**.
+
+Use its research to update:
+
+- threat models;
+- red-team scenarios;
+- detection validation;
+- secure-development assumptions;
+- hardware/runtime isolation requirements;
+- agent/tool permission boundaries.
+
+Do not translate every novel technique directly into a P0 enterprise backlog. First assess reachability, preconditions, business exposure, and exploit maturity.
+
+## Evidence caveat
+
+Black Hat is not a prevalence survey. A compelling technique can be important even if it has not yet appeared widely in incident-response data.
+
+## Sources
+
+- https://blackhat.com/us-26/briefings.html
+- https://blackhat.com/us-26/schedule.html
+- https://blackhat.com/html/press/2026-06-02.html
