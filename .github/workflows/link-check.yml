@@ -27,7 +27,7 @@ jobs:
       - name: Check Markdown links
         uses: lycheeverse/lychee-action@v2
         with:
-          # RSAC and Black Hat return HTTP 403 to GitHub-hosted automation
+          # Some publisher sites reject GitHub-hosted automation or fail HTTP/2
           # even though the links are valid in a normal browser.
           args: >-
             --verbose
@@ -35,5 +35,8 @@ jobs:
             --accept 200,206,429
             --exclude "https://www\.rsaconference\.com/.*"
             --exclude "https://blackhat\.com/.*"
+            --exclude "https://www\.akamai\.com/.*"
+            --exclude "https://www\.sophos\.com/.*"
+            --exclude "https://www\.cloudflare\.com/lp/.*"
             "**/*.md"
           fail: true
