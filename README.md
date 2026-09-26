@@ -86,6 +86,7 @@ Seven themes recur across the 2026 evidence base:
 - [MITRE ATT&CK](frameworks/mitre-attack.md)
 - [NIST CSF 2.0](frameworks/nist-csf.md)
 - [CIS Controls v8.1](frameworks/cis-controls.md)
+- [NIST CSF 2.0 × CIS Controls v8.1 × 2026 Threat Crosswalk](frameworks/nist-cis-crosswalk.md)
 
 ### AI security
 
