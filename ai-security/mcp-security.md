@@ -1,6 +1,8 @@
 # Model Context Protocol (MCP) security
 
-Reviewed against the **2026-07-28 MCP Authorization specification and Security Best Practices**.
+> See [AI Security Architecture](README.md) for the end-to-end enterprise model.
+
+Reviewed against the **final 2026-07-28 MCP protocol revision**, its authorization guidance, and MCP security best practices.
 
 Primary references:
 
@@ -180,3 +182,23 @@ For a compromised MCP integration:
 4. Search tool/audit logs for actions by the delegated principal.
 5. Rotate reusable secrets if any were exposed.
 6. Review approvals/scopes and remove excess authority before re-enabling.
+
+
+## Normative specification vs roadmap
+
+Do not treat every MCP proposal as a current security requirement.
+
+As of 2026-09-27:
+
+- **2026-07-28 is the final protocol revision** used as the normative baseline in this repository.
+- The 2026 revision includes authorization hardening such as issuer validation and credential-isolation/scope behavior through finalized specification work.
+- The MCP roadmap published in August 2026 identifies **agent identity and enterprise-ready security** as continuing areas of work.
+- Draft/proposal SEPs—such as proposed tool-auth or additional telemetry mechanisms—are useful design signals but are **not** described here as normative until finalized.
+
+This distinction matters because enterprise controls should not depend on a proposal being implemented consistently across clients and servers.
+
+Additional references:
+
+- https://blog.modelcontextprotocol.io/posts/mcp-roadmap/
+- https://plan.modelcontextprotocol.io/conformance
+- https://plan.modelcontextprotocol.io/seps

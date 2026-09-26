@@ -100,7 +100,7 @@ This source register separates **threat evidence**, **conference signals**, **fr
 ## AI / MCP implementation references
 
 - MCP Authorization specification (2026-07-28): https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization
-- MCP Security Best Practices (2026-07-28): https://modelcontextprotocol.io/docs/tutorials/security/security_best_practices
+- MCP Security Best Practices: https://modelcontextprotocol.io/docs/tutorials/security/security_best_practices\n- MCP 2026-07-28 conformance status: https://plan.modelcontextprotocol.io/conformance\n- MCP SEP/status register: https://plan.modelcontextprotocol.io/seps\n- MCP roadmap (2026-08-22): https://blog.modelcontextprotocol.io/posts/mcp-roadmap/
 
 ## Methodology
 

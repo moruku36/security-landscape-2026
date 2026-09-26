@@ -1,5 +1,7 @@
 # AI Agent security
 
+> See [AI Security Architecture](README.md) for the end-to-end enterprise model.
+
 The 2026 threat landscape makes a useful distinction:
 
 > The primary enterprise risk of an agent is not that it can reason. It is that it can **act with delegated authority**.
@@ -176,3 +178,43 @@ Delegation ≠ Unlimited authority
 M-Trends, CrowdStrike, Unit 42, Microsoft, IBM, and conference programs all show AI being used as an accelerator or becoming an attack surface. The architectural response is to integrate agents into normal identity, authorization, telemetry, and incident-response systems rather than create a separate "AI exception zone."
 
 See [MCP Security](mcp-security.md).
+
+## Control-plane interpretation
+
+A privileged agent belongs in both the **Identity Plane** and the **Control Plane**:
+
+```text
+Agent identity
+→ determines who/what is acting
+
+Tool authorization
+→ determines what can be changed
+
+Delegated credential
+→ determines downstream authority
+
+Telemetry
+→ determines whether the action is attributable
+
+Human approval
+→ bounds irreversible/high-impact actions
+```
+
+Do not create an AI-specific exception where a broadly privileged service account, static API key, or opaque shared identity would be unacceptable for any other production workload.
+
+## Minimum production readiness checklist
+
+- [ ] Named business/technical owner
+- [ ] Unique agent identity
+- [ ] Declared environment and purpose
+- [ ] Allowed models/runtimes
+- [ ] Allowed tools/connectors
+- [ ] Explicit data classifications
+- [ ] Short-lived credentials where practical
+- [ ] Documented maximum privilege
+- [ ] Human gate for destructive/privileged actions
+- [ ] Central audit / correlation ID
+- [ ] Rate/blast-radius limits
+- [ ] Token/connector kill switch
+- [ ] Incident-response runbook
+- [ ] Periodic access/tool review
