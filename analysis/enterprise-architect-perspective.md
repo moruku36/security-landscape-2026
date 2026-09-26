@@ -1,6 +1,6 @@
 # Enterprise Architect perspective
 
-This chapter translates the 2026 threat landscape for architects working across **Enterprise IT, Cloud, Security, DevSecOps, and Operations**.
+This chapter translates the 2026 threat landscape for architects and senior engineers working across **Enterprise IT, Cloud, Security, DevSecOps, and Operations**. The goal is to connect threat evidence to design decisions, operating models, and measurable controls—not to prescribe a single vendor stack.
 
 ## 1. Hybrid identity architecture is the highest-leverage control domain
 
@@ -129,3 +129,45 @@ Telemetry Plane  — can activity across all four be reconstructed?
 ```
 
 This model is intentionally cloud-provider neutral and can then be implemented with Azure, AWS, GCP, SaaS, and on-premises controls.
+
+## Domain-by-domain architect lens
+
+| Domain | 2026 design question | Architecture artifact | Useful evidence / KPI |
+|---|---|---|---|
+| Enterprise IT | Which management systems become Tier-0 if compromised? | Trust-boundary / admin-path diagram | Tier-0 assets with isolated admin path and centralized audit |
+| Cloud | Can a compromised identity traverse org/tenant boundaries or assume broader roles? | Cloud identity + organization-policy model | Standing privilege, external trust, workload key count, guardrail exceptions |
+| Security / SecOps | Can an incident be reconstructed across endpoint, identity, cloud, SaaS, edge, virtualization, and recovery? | Telemetry coverage matrix + detection catalogue | High-value source coverage, MTTD/MTTC, investigation data-source count |
+| DevSecOps | Can CI/CD or dependency trust modify production without short-lived, attributable authority? | Software supply-chain trust model | Federated pipeline identities, signed releases, secret age, provenance coverage |
+| Operations / Resilience | Can the service recover after identity/control-plane compromise? | Recovery dependency graph + restore runbook | Restore success, RTO validation, recovery credential isolation |
+| AI Engineering | Is every agent/tool action attributable, authorized, bounded, and revocable? | Agent identity + tool authorization model | Unowned agents/connectors, broad scopes, human-gated destructive actions |
+
+## Design review questions
+
+A cross-domain architecture review should be able to answer:
+
+1. **Identity:** Which human and non-human identities can reach each critical control plane?
+2. **Privilege:** Which of those permissions are standing, and which can be JIT/time-bound?
+3. **Trust:** Which third-party, OAuth, SaaS, CI/CD, and federation relationships can transitively grant access?
+4. **Exposure:** Which Internet-facing assets lead to privileged or high-value paths?
+5. **Telemetry:** Can each privilege-changing or recovery-destructive action be reconstructed?
+6. **Containment:** Which high-confidence actions can be safely automated and reversed?
+7. **Recovery:** Can trusted administration be restored without depending on the compromised production plane?
+8. **Ownership:** Does every service account, integration, agent, and exception have a responsible owner and review date?
+
+## Suggested architecture deliverables
+
+For a practical enterprise program, the threat landscape should produce concrete artifacts:
+
+- Tier-0 / high-trust asset inventory;
+- human + non-human identity inventory;
+- SaaS/OAuth/vendor integration register;
+- external attack-surface inventory;
+- multi-cloud organization guardrail baseline;
+- telemetry coverage matrix;
+- ATT&CK-linked detection catalogue;
+- recovery-plane trust diagram;
+- CI/CD and OSS supply-chain trust model;
+- AI agent / MCP registry and authorization policy;
+- prioritized remediation backlog tied to attack-path reduction.
+
+The value of the annual reports is highest when they change one of these artifacts, not when they only add another slide to a threat briefing.
