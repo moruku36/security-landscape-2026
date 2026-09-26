@@ -71,6 +71,7 @@ flowchart LR
 - [2026 Timeline](analysis/trend-timeline.md)
 - [Enterprise Architectureへの示唆](analysis/enterprise-architecture-implications.md)
 - [Enterprise Architect Perspective](analysis/enterprise-architect-perspective.md)
+- [Reference Architecture](architecture/reference-architecture.md)
 - [Security Planes](architecture/security-planes.md)
 - [Identity Architecture](architecture/identity.md)
 - [Recovery Architecture](architecture/recovery.md)

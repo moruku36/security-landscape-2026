@@ -74,6 +74,7 @@ Seven themes recur across the 2026 evidence base:
 
 ### Architecture
 
+- [Reference architecture](architecture/reference-architecture.md)
 - [Security planes](architecture/security-planes.md)
 - [Identity architecture](architecture/identity.md)
 - [Recovery architecture](architecture/recovery.md)
