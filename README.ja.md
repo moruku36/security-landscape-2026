@@ -127,3 +127,98 @@ flowchart TB
 各ベンダーの母集団・地域・Incident Definitionが異なるため、統計値そのものをベンダー間ランキングには使いません。
 
 詳細は [SOURCES.md](SOURCES.md)、年次レポートの言語別一覧は [reports/README.md](reports/README.md)、更新方法は [CONTRIBUTING.md](CONTRIBUTING.md) を参照してください。
+
+
+## 次にアップデートする時期
+
+このRepositoryは、**定期更新より「重要な変化があった時に更新する」ことを優先**します。
+
+### 次回のおすすめ確認時期：2026年10月末〜11月
+
+以下のいずれかが発生したら、部分更新するのがよいです。
+
+- Microsoftが次のDigital Defense Report年次版を公開した
+- 主要Vendorが2026年版Threat / Incident Response Reportを大きく更新した
+- Black Hat / DEF CON / FIRSTなどの追加公開資料で、現在のArchitecture結論を変える重要な研究が出た
+- MITRE ATT&CK / NIST CSF / CIS Controls / MCP / Cloud ProviderのSecurity Guidanceに、現在のMappingへ影響する変更が入った
+
+大きなTriggerがなければ、**2026年12月〜2027年1月**に年末レビューを行い、2026年版を一度締めるのがおすすめです。
+
+### 次の大規模更新：2027年2月〜5月
+
+2027年版の主要Annual Reportが出始めた段階で、本格的な更新を行います。
+
+その際は、
+
+1. 2027 Editionを追加する
+2. 2026 Editionは履歴として残す
+3. **2026 → 2027で何が変わったか**を新しく分析する
+4. Consensus MatrixとArchitecture ImplicationをEvidenceが変わった部分だけ更新する
+5. 現在のSecurity Plane Modelが引き続き有効か再評価する
+
+という進め方にします。
+
+## 次にやるとよいこと
+
+優先順位は次の通りです。
+
+1. **2026年末の総括を追加する**  
+   年末に、
+   - さらに強まったTrend
+   - 年初から変わらなかったTrend
+   - 話題ほどEnterprise Architectureへ影響しなかったTrend  
+   を分けて整理します。
+
+2. **2026 → 2027 Delta Analysisを作る**  
+   毎年全文を書き直すのではなく、
+   - Initial Access
+   - Identity Abuse
+   - Cloud / SaaS
+   - Edge / Virtualization
+   - Ransomware / Recovery Denial
+   - AI Attack / AI Defense
+   - Attack / Response Speed  
+   が前年からどう変化したかを追えるようにします。
+
+3. **Conference資料も日本語版を追加する**  
+   RSAC / Black Hat / DEF CON / FIRST CTI / FIRSTCONについても、`reports/` と同じ英語・日本語のペア構成にすると、Repository全体の一貫性が上がります。
+
+4. **Source UpdateのMonitoringを自動化する**  
+   将来的には、
+   - Annual Reportの新版公開
+   - Official URL変更
+   - Framework Version更新
+   - Cloud Security Guidance更新  
+   を軽量に検知できる仕組みを追加すると保守が楽になります。
+
+5. **CHANGELOG / Release Tagを導入する**  
+   まとまった更新ごとに、
+   - `2026-09-snapshot`
+   - `2026-year-end`
+   - `2027-q1-refresh`  
+   のようなTag / Releaseを作ると、どの時点の知見か追いやすくなります。
+
+6. **Architectureは流行ではなくEvidenceで変える**  
+   新しいKeywordが流行したから新しいSecurity Domainを増やすのではなく、複数の独立したSourceや重要な技術変化が裏付けた時だけArchitectureを変更します。
+
+## 更新時チェックリスト
+
+更新するときは次を確認します。
+
+- [ ] 主要7レポートに新版が出ていないか確認
+- [ ] Conferenceの追加公開資料・研究を確認
+- [ ] 重要統計とObservation Periodを再確認
+- [ ] 英語版と日本語版を同時に更新
+- [ ] [SOURCES.md](SOURCES.md) を更新
+- [ ] Cross-report Consensus Matrixを再評価
+- [ ] MITRE ATT&CK / NIST / CIS Mappingを確認
+- [ ] Azure / AWS / GCPの実装Referenceを確認
+- [ ] AI Agent / MCP Security Guidanceを確認
+- [ ] Link Check CIを実行
+- [ ] CHANGELOG / Release Noteへ変更内容を記録
+
+更新頻度を増やすこと自体が目的ではありません。
+
+> **「2026年9月時点のまとめ」を保存しつつ、重要な変化だけを継続的に取り込み、Living Architecture Referenceとして育てること**
+
+をMaintenance方針にします。

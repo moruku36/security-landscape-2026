@@ -152,3 +152,86 @@ Vendor statistics are not ranked against one another because each report uses a 
 ## Maintenance
 
 This is intended to remain reproducible rather than become a one-off summary. See [CONTRIBUTING.md](CONTRIBUTING.md) for the update workflow.
+
+
+## When to update next
+
+The repository is intended to be **event-driven first, calendar-driven second**.
+
+### Recommended next review window: late October–November 2026
+
+Do a focused refresh when one of the following happens:
+
+- Microsoft publishes the next annual Digital Defense Report;
+- a major vendor publishes a materially revised 2026 threat/IR report;
+- a major post-conference research release changes the current architecture conclusions;
+- MITRE ATT&CK, NIST CSF, CIS Controls, MCP, or major cloud-provider security guidance changes in a way that affects the mappings in this repository.
+
+If none of those triggers occur, the next scheduled refresh should be **December 2026–January 2027** to close out the 2026 landscape.
+
+### Annual refresh window: February–May 2027
+
+The next large rebuild should happen when the 2027 annual-report cycle begins. At that point:
+
+1. add the new annual editions;
+2. keep the 2026 editions for historical comparison;
+3. create a 2026 → 2027 change analysis;
+4. update the consensus matrix and architecture implications only where the evidence changes;
+5. review whether the current five-plane architecture still explains the new attack paths.
+
+## What to do next
+
+Recommended backlog, in order:
+
+1. **Year-end 2026 synthesis**  
+   Add a short document that separates:
+   - trends that strengthened through the year;
+   - trends that remained stable;
+   - trends that were over-hyped or did not materially change enterprise architecture.
+
+2. **2026 → 2027 delta analysis**  
+   Create a version-to-version comparison instead of rewriting history. Track changes in:
+   - initial access;
+   - identity abuse;
+   - cloud/SaaS activity;
+   - edge/virtualization;
+   - ransomware/recovery denial;
+   - AI-assisted attack and defense;
+   - response speed.
+
+3. **Conference bilingual expansion**  
+   Add Japanese editions for RSAC, Black Hat, DEF CON, FIRST CTI, and FIRSTCON using the same bilingual pattern as `reports/`.
+
+4. **Source-change automation**  
+   Add lightweight monitoring for:
+   - new annual-report editions;
+   - changed official URLs;
+   - framework/version updates;
+   - major cloud-security architecture updates.
+
+5. **Release/version discipline**  
+   Add `CHANGELOG.md` and GitHub releases/tags for meaningful repository snapshots, for example:
+   - `2026-09-snapshot`
+   - `2026-year-end`
+   - `2027-q1-refresh`
+
+6. **Keep architecture conclusions evidence-driven**  
+   Do not add a new security domain simply because it is fashionable. Add or change architecture only when multiple independent sources, or a strong technical development, justify it.
+
+## Update checklist
+
+For each refresh:
+
+- [ ] Check all seven annual-report publishers for a newer edition.
+- [ ] Check major conference follow-up material and published research.
+- [ ] Re-verify important statistics and observation periods.
+- [ ] Update English and Japanese report editions together.
+- [ ] Update [SOURCES.md](SOURCES.md).
+- [ ] Re-run the cross-report consensus matrix.
+- [ ] Review ATT&CK / NIST / CIS mappings.
+- [ ] Review Azure / AWS / GCP implementation references.
+- [ ] Review AI-agent / MCP security guidance.
+- [ ] Re-run link-check CI.
+- [ ] Record the change in a release note or changelog.
+
+The goal is to keep this repository useful as a **living architecture reference**, not to maximize update frequency.
