@@ -13,7 +13,7 @@ last_verified: ""
 
 # レポート名 — 日本語解説
 
-[English](example.md)
+English counterpart: `example.md`
 
 ## このレポートを読む意味
 
