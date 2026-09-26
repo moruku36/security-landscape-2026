@@ -7,11 +7,13 @@ on:
   pull_request:
     paths:
       - "**/*.md"
+      - ".github/workflows/link-check.yml"
   push:
     branches:
       - main
     paths:
       - "**/*.md"
+      - ".github/workflows/link-check.yml"
 
 permissions:
   contents: read
@@ -25,9 +27,13 @@ jobs:
       - name: Check Markdown links
         uses: lycheeverse/lychee-action@v2
         with:
+          # RSAC and Black Hat return HTTP 403 to GitHub-hosted automation
+          # even though the links are valid in a normal browser.
           args: >-
             --verbose
             --no-progress
             --accept 200,206,429
+            --exclude "https://www\.rsaconference\.com/.*"
+            --exclude "https://blackhat\.com/.*"
             "**/*.md"
           fail: true
