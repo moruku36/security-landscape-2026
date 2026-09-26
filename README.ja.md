@@ -46,15 +46,16 @@ flowchart LR
 
 ## コンテンツ
 
-### 年次レポート
+### 年次レポート — 詳細日本語版 / English
 
-- [Mandiant M-Trends 2026](reports/01-m-trends-2026.md)
-- [Verizon 2026 DBIR](reports/02-verizon-dbir-2026.md)
-- [CrowdStrike 2026 Global Threat Report](reports/03-crowdstrike-global-threat-report-2026.md)
-- [Unit 42 2026 Global Incident Response Report](reports/04-unit42-global-ir-2026.md)
-- [Microsoft Digital Defense Report 2025](reports/05-microsoft-digital-defense-report-2025.md) — 2026-09-26時点の最新年次版
-- [IBM X-Force Threat Intelligence Index 2026](reports/06-ibm-xforce-2026.md)
-- [ENISA Threat Landscape 2026](reports/07-enisa-threat-landscape-2026.md)
+- Mandiant M-Trends 2026 — [日本語](reports/01-m-trends-2026.ja.md) / [EN](reports/01-m-trends-2026.md)
+- Verizon 2026 DBIR — [日本語](reports/02-verizon-dbir-2026.ja.md) / [EN](reports/02-verizon-dbir-2026.md)
+- CrowdStrike 2026 Global Threat Report — [日本語](reports/03-crowdstrike-global-threat-report-2026.ja.md) / [EN](reports/03-crowdstrike-global-threat-report-2026.md)
+- Unit 42 2026 Global Incident Response Report — [日本語](reports/04-unit42-global-ir-2026.ja.md) / [EN](reports/04-unit42-global-ir-2026.md)
+- Microsoft Digital Defense Report 2025 — [日本語](reports/05-microsoft-digital-defense-report-2025.ja.md) / [EN](reports/05-microsoft-digital-defense-report-2025.md) — 2026-09-26時点の最新年次版
+- IBM X-Force Threat Intelligence Index 2026 — [日本語](reports/06-ibm-xforce-2026.ja.md) / [EN](reports/06-ibm-xforce-2026.md)
+- ENISA Threat Landscape 2026 — [日本語](reports/07-enisa-threat-landscape-2026.ja.md) / [EN](reports/07-enisa-threat-landscape-2026.md)
+- [Report Index / Evidence Guide](reports/README.md)
 
 ### カンファレンス
 
@@ -83,6 +84,7 @@ flowchart LR
 - [MITRE ATT&CK](frameworks/mitre-attack.md)
 - [NIST CSF 2.0](frameworks/nist-csf.md)
 - [CIS Controls v8.1](frameworks/cis-controls.md)
+- [NIST × CIS × 2026 Threat Crosswalk](frameworks/nist-cis-crosswalk.md)
 - [AI Security Architecture](ai-security/README.md)
 - [AI Agent Security](ai-security/agent-security.md)
 - [MCP Security](ai-security/mcp-security.md)
@@ -118,14 +120,10 @@ flowchart TB
 
 ## Evidenceの扱い
 
-横断表では曖昧なStrong/Weak評価ではなく、
-
 - **Major** — レポートの主要テーマ・主要発見
 - **Observed** — 明確な観測はあるが中心テーマではない
 - **Not emphasized** — 今回確認した範囲では主要論点ではない
 
-として扱います。
-
 各ベンダーの母集団・地域・Incident Definitionが異なるため、統計値そのものをベンダー間ランキングには使いません。
 
-詳細は [SOURCES.md](SOURCES.md)、更新方法は [CONTRIBUTING.md](CONTRIBUTING.md) を参照してください。
+詳細は [SOURCES.md](SOURCES.md)、年次レポートの言語別一覧は [reports/README.md](reports/README.md)、更新方法は [CONTRIBUTING.md](CONTRIBUTING.md) を参照してください。

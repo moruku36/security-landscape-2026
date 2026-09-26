@@ -50,15 +50,16 @@ Seven themes recur across the 2026 evidence base:
 
 ## Repository map
 
-### Evidence
+### Evidence — detailed reports in English and Japanese
 
-- [Mandiant M-Trends 2026](reports/01-m-trends-2026.md)
-- [Verizon 2026 DBIR](reports/02-verizon-dbir-2026.md)
-- [CrowdStrike 2026 Global Threat Report](reports/03-crowdstrike-global-threat-report-2026.md)
-- [Unit 42 2026 Global Incident Response Report](reports/04-unit42-global-ir-2026.md)
-- [Microsoft Digital Defense Report 2025](reports/05-microsoft-digital-defense-report-2025.md) — latest annual edition available as of 2026-09-26
-- [IBM X-Force Threat Intelligence Index 2026](reports/06-ibm-xforce-2026.md)
-- [ENISA Threat Landscape 2026](reports/07-enisa-threat-landscape-2026.md)
+- Mandiant M-Trends 2026 — [EN](reports/01-m-trends-2026.md) / [JA](reports/01-m-trends-2026.ja.md)
+- Verizon 2026 DBIR — [EN](reports/02-verizon-dbir-2026.md) / [JA](reports/02-verizon-dbir-2026.ja.md)
+- CrowdStrike 2026 Global Threat Report — [EN](reports/03-crowdstrike-global-threat-report-2026.md) / [JA](reports/03-crowdstrike-global-threat-report-2026.ja.md)
+- Unit 42 2026 Global Incident Response Report — [EN](reports/04-unit42-global-ir-2026.md) / [JA](reports/04-unit42-global-ir-2026.ja.md)
+- Microsoft Digital Defense Report 2025 — [EN](reports/05-microsoft-digital-defense-report-2025.md) / [JA](reports/05-microsoft-digital-defense-report-2025.ja.md) — latest annual edition available as of 2026-09-26
+- IBM X-Force Threat Intelligence Index 2026 — [EN](reports/06-ibm-xforce-2026.md) / [JA](reports/06-ibm-xforce-2026.ja.md)
+- ENISA Threat Landscape 2026 — [EN](reports/07-enisa-threat-landscape-2026.md) / [JA](reports/07-enisa-threat-landscape-2026.ja.md)
+- [Report index and evidence guide](reports/README.md)
 
 ### Conferences
 
@@ -146,7 +147,7 @@ Vendor statistics are not ranked against one another because each report uses a 
 - Cross-source conclusions require repeated evidence or an explicit analytical rationale.
 - Conference notes summarize official programs, recaps, and representative technical sessions; they are not verbatim coverage of every talk.
 - Framework mappings are architectural crosswalks, not claims that the source reports themselves used those frameworks.
-- See [SOURCES.md](SOURCES.md) for the source register and [reports/_template.md](reports/_template.md) for the update schema.
+- See [SOURCES.md](SOURCES.md) for the source register and [reports/README.md](reports/README.md) for the bilingual report index.
 
 ## Maintenance
 
