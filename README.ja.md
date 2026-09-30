@@ -67,6 +67,7 @@ flowchart LR
 - [Akamai Agentic Threat Landscape 2026](supplemental/06-akamai-agentic-threat-landscape-2026.ja.md) — Agent / MCP / Browser / Nonhuman Identity
 - [Check Point Cyber Security Report 2026](supplemental/07-check-point-cyber-security-report-2026.ja.md) — AI / MCP / Edge / Hybrid
 - [Fortinet Global Threat Landscape 2026](supplemental/08-fortinet-global-threat-landscape-2026.ja.md) — Exploit Velocity / Network / Legitimate Tool
+- [日本の能動的サイバー防御：2026年10月の施行と企業対応](supplemental/09-japan-active-cyber-defense-2026.ja.md) — 段階施行 / 重要インフラ / 報告準備（2026-09-30確認）
 - [Supplemental Research一覧](supplemental/README.md)
 
 ### カンファレンス
@@ -230,3 +231,4 @@ flowchart TB
 > **「2026年9月時点のまとめ」を保存しつつ、重要な変化だけを継続的に取り込み、Living Architecture Referenceとして育てること**
 
 をMaintenance方針にします。
+
