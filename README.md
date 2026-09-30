@@ -71,6 +71,7 @@ Seven themes recur across the 2026 evidence base:
 - [Akamai Agentic Threat Landscape 2026](supplemental/06-akamai-agentic-threat-landscape-2026.md) — agent / MCP / browser / nonhuman identity
 - [Check Point Cyber Security Report 2026](supplemental/07-check-point-cyber-security-report-2026.md) — AI / MCP / edge / hybrid attack paths
 - [Fortinet Global Threat Landscape 2026](supplemental/08-fortinet-global-threat-landscape-2026.md) — exploit velocity / network / legitimate tools
+- [Japan active cyber defense: October 2026 implementation](supplemental/09-japan-active-cyber-defense-2026.md) — staged commencement / critical infrastructure / reporting readiness (verified 2026-09-30)
 - [Supplemental research index](supplemental/README.md)
 
 ### Conferences
@@ -244,3 +245,4 @@ For each refresh:
 - [ ] Record the change in a release note or changelog.
 
 The goal is to keep this repository useful as a **living architecture reference**, not to maximize update frequency.
+

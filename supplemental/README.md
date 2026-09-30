@@ -14,6 +14,7 @@ This directory collects **high-value supplemental 2026 research** that fills nar
 | 06 | Akamai Agentic Threat Landscape 2026 | Nonhuman identity / agent / MCP / browser | [EN](06-akamai-agentic-threat-landscape-2026.md) | [JA](06-akamai-agentic-threat-landscape-2026.ja.md) |
 | 07 | Check Point Cyber Security Report 2026 | AI / MCP / edge / hybrid attack paths | [EN](07-check-point-cyber-security-report-2026.md) | [JA](07-check-point-cyber-security-report-2026.ja.md) |
 | 08 | Fortinet Global Threat Landscape 2026 | Exploit velocity / network / legitimate tools | [EN](08-fortinet-global-threat-landscape-2026.md) | [JA](08-fortinet-global-threat-landscape-2026.ja.md) |
+| 09 | Japan active cyber defense legislation | Staged commencement / critical infrastructure / reporting readiness; verified 2026-09-30 | [EN](09-japan-active-cyber-defense-2026.md) | [JA](09-japan-active-cyber-defense-2026.ja.md) |
 
 ## How these are used
 
@@ -27,3 +28,6 @@ They are especially useful when:
 - independent evidence is needed before changing an architecture conclusion.
 
 See [../analysis/cross-report-trends.md](../analysis/cross-report-trends.md).
+
+
+The Japan legislation note is a separately dated policy/implementation supplement. It does not alter the annual threat-report consensus matrix or imply that a legal requirement is itself threat-frequency evidence.

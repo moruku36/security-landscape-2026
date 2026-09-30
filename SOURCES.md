@@ -29,6 +29,21 @@ This source register separates **threat evidence**, **conference signals**, **fr
 | Check Point Research | Cyber Security Report 2026 | AI, MCP, ransomware, edge, hybrid attack paths | https://research.checkpoint.com/2026/cyber-security-report-2026/ |
 | FortiGuard Labs | 2026 Global Threat Landscape Report | Exploit velocity, network telemetry, identity/tool abuse | https://www.fortinet.com/resources/reports/threat-landscape-report |
 
+## Japan active cyber defense policy supplement
+
+Added and verified: **2026-09-30 (JST)**. This is a separately dated legal/policy note; the existing threat-report snapshot and consensus matrix are unchanged.
+
+| Source | Publication / scope | Official URL |
+|---|---|---|
+| Cabinet Office | Current legislation and implementation-source landing page | https://www.cao.go.jp/cybersecurity/ |
+| Cabinet Order No. 46 | Commencement under the main clause of Act No. 42's supplementary Article 1: 2026-10-01; exceptions must be checked separately | https://www.cao.go.jp/cybersecurity/pdf/sekoukijitsu.pdf |
+| e-Gov | Act No. 42 of 2025, including staged commencement and transitional provisions | https://laws.e-gov.go.jp/law/507AC0000000042 |
+| Cabinet Secretariat / Cabinet Office | September 2025 explanation of the strengthening and related amendment acts; background, not proof of later implementation dates | https://www.cao.go.jp/cybersecurity/pdf/setsumei.pdf |
+| Prime Minister's Office | 2026-07-31 statement on the council and access/neutralization commencement; indexed official text available, direct retrieval returned 404 during verification | https://www.kantei.go.jp/jp/105/actions/202607/31security.html |
+| e-Gov public-comment results | Government responses to reporting-order consultation; No. 81 explains the 2027-03-31 transitional deadline for existing covered assets | https://public-comment.e-gov.go.jp/pcm/download?seqNo=0000315045 |
+
+See [English note](supplemental/09-japan-active-cyber-defense-2026.md) / [日本語解説](supplemental/09-japan-active-cyber-defense-2026.ja.md) for claim-level references, limitations, and the distinction between statutory requirements and recommended architecture controls.
+
 ## Conferences
 
 ### RSAC 2026
@@ -128,3 +143,4 @@ This source register separates **threat evidence**, **conference signals**, **fr
 - Product-specific cloud guidance is subordinate to provider-neutral architecture principles.
 - Important statistics should record the observation context, denominator/population where available, and official evidence in the report note.
 - Counts, percentages, medians, averages, fastest observations, incident counts, breach counts and attack-technique counts are preserved as different measurement types; they are not normalized without source support.
+
