@@ -46,6 +46,22 @@ See [English note](supplemental/09-japan-active-cyber-defense-2026.md) / [日本
 
 ## Conferences
 
+### Dated follow-up: 2026-10-31 (UTC)
+
+[English refresh](conferences/06-october-2026-refresh.md) / [日本語](conferences/06-october-2026-refresh.ja.md) records event dates, publication/file-update dates, material-access limits, and claim-level links. This is selective backfill plus a CCS schedule update, not a replacement date for the annual-report snapshot.
+
+- RSAC post-event / membership recording route: https://www.rsaconference.com/events/2026-usa
+- Black Hat completion release (2026-08-11): https://blackhat.com/html/press/2026-08-11.html
+- AI Village post-event materials (2026-08-22; village organizer, not a complete DEF CON archive): https://aivillage.org/blog/defcon34-bruce-schneier-fireside-chat/
+- FIRST public material registers: https://www.first.org/conference/firstcti26/program and https://www.first.org/conference/2026/program
+- USENIX Security 2026 open proceedings: https://www.usenix.org/conference/usenixsecurity26/technical-sessions
+- IEEE S&P 2026 program (not reviewed talk outcomes): https://sp2026.ieee-security.org/program.html
+- NDSS 2026 archive and papers: https://www.ndss-symposium.org/ndss2026/
+- ACM CCS 2026 (November event still planned; schedule announcement 2026-09-27): https://www.sigsac.org/ccs/CCS2026/
+- CCC 40C3 (December event still planned; announcement 2026-09-12): https://events.ccc.de/en/2026/09/12/40c3-model-citizens/
+- CCC 39C3 (2025 event; 2026 follow-up must retain original event year): https://events.ccc.de/en/category/39c3/
+
+
 ### RSAC 2026
 
 - https://www.rsaconference.com/events/2026-usa

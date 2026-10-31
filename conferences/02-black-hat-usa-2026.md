@@ -4,7 +4,7 @@ date: "2026-08-01 to 2026-08-06"
 location: "Las Vegas"
 evidence_type: "Peer-reviewed security research / trainings / Arsenal"
 primary_source: "https://blackhat.com/us-26/briefings.html"
-last_verified: "2026-09-26"
+last_verified: "2026-10-31"
 ---
 
 # Black Hat USA 2026
@@ -13,7 +13,7 @@ last_verified: "2026-09-26"
 
 Black Hat is a **technical leading indicator**. Peer-reviewed Briefings expose attack techniques and security assumptions before they are necessarily common enough to dominate annual incident statistics.
 
-The 2026 program included more than 100 peer-reviewed Briefings, more than 100 Trainings, over 80 Arsenal demos, and specialized forums.
+The June 2 announcement advertised more than 100 peer-reviewed Briefings, more than 100 Trainings, over 80 Arsenal demos, and specialized forums.
 
 ## Official 2026 themes
 
@@ -26,11 +26,14 @@ Black Hat highlighted four program themes:
 
 These themes align closely with the annual-report evidence while extending it into emerging low-level and agentic attack surfaces.
 
-## Representative technical signals
+## Representative technical signals — announcement claims
+
+Verification correction (2026-10-31): the cited June 2 press release describes planned research, not independently verified presentation results. The retrieved official session listing returned no sessions. Individual slides, papers, and recordings were not inspected; the summaries below must not be read as proof of completed demonstrations. See the [October evidence refresh](06-october-2026-refresh.md) / [日本語](06-october-2026-refresh.ja.md).
+
 
 ### Compiler and language assumptions can fail
 
-Research on compiler optimization showed how defensive source-code patterns can become vulnerable after optimization.
+The official announcement described research into how defensive source-code patterns can become vulnerable after optimization.
 
 Architecture lesson:
 
@@ -38,7 +41,7 @@ Architecture lesson:
 
 ### GPU becomes a privilege boundary
 
-Research demonstrated targeted Rowhammer-style attacks against NVIDIA GPUs with privilege-escalation implications.
+The official announcement described planned targeted Rowhammer-style attacks against NVIDIA GPUs with privilege-escalation implications.
 
 Architecture lesson:
 
@@ -46,7 +49,7 @@ Architecture lesson:
 
 ### Unicode normalization becomes a cross-layer attack surface
 
-Research showed how malformed/normalized Unicode can cross boundaries between WAFs, web applications, and LLM systems.
+The official announcement described how malformed/normalized Unicode can cross boundaries between WAFs, web applications, and LLM systems.
 
 Architecture lesson:
 

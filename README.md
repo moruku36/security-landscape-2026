@@ -81,6 +81,7 @@ Seven themes recur across the 2026 evidence base:
 - [DEF CON 34](conferences/03-def-con-34.md)
 - [FIRST CTI 2026](conferences/04-first-cti-2026.md)
 - [FIRSTCON26](conferences/05-firstcon26.md)
+- [October 2026 conference evidence refresh](conferences/06-october-2026-refresh.md) / [JA](conferences/06-october-2026-refresh.ja.md) — materials availability, evidence corrections, and expanded academic/CCC coverage (checked 2026-10-31)
 
 ### Cross-source analysis
 
