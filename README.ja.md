@@ -77,6 +77,7 @@ flowchart LR
 - [DEF CON 34](conferences/03-def-con-34.md)
 - [FIRST CTI 2026](conferences/04-first-cti-2026.md)
 - [FIRSTCON26](conferences/05-firstcon26.md)
+- [2026年10月：会議資料の確認と対象拡張](conferences/06-october-2026-refresh.ja.md) / [EN](conferences/06-october-2026-refresh.md) — 公開資料・証拠区分の訂正・学術会議／CCC（2026-10-31確認）
 
 ### 横断分析・設計
 
