@@ -18,8 +18,8 @@ from pathlib import Path
 
 
 USER_AGENT = (
-    "Mozilla/5.0 (compatible; security-landscape-source-monitor/1.0; "
-    "+https://github.com/moruku36/security-landscape-2026)"
+    "Mozilla/5.0 (compatible; tech-landscape-source-monitor/1.0; "
+    "+https://github.com/moruku36/tech-landscape-2026)"
 )
 
 
